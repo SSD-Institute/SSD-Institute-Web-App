@@ -16,7 +16,7 @@ The main project stakeholders are
 
 ### User Stores and Critial Success Factors
 
-
+[User Stories Doc](UserStoriesDoc.md)
 
 ## Anticipated Completion 
 
@@ -36,7 +36,6 @@ Here is the roles and responsibilities of each member of the initial team
 * Austin Pringle: Sr Dev, and Business Anaylst
 * Stuart Krugger: QA, DevOps, and Content Writer
 * Thom Mo: Project Manager, and Dev
-
 
 ## Sign off of stake holders 
 
