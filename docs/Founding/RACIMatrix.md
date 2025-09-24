@@ -1,0 +1,34 @@
+## RACI Matrix
+[Back to README.md](../README.md)
+### Legend
+| Role | Description |
+|------|-------------|
+| **R** | Responsible: Does the work to complete the task. |
+| **A** | Accountable: Ultimately answerable for the task's completion and quality (only one per row). |
+| **C** | Consulted: Provides input or expertise (two-way communication). |
+| **I** | Informed: Kept updated on progress (one-way communication). |
+| -    | Not involved. |
+
+### Matrix (draft)
+
+| Task / Activity                  |       Thom      | Austin    | Stuart   | Justin       |
+|----------------------------------|-----------------|-----------|----------|--------------|
+| Project Charter                  |        R        |     C     |    C     |      C       |
+| Project Scope                    |        A        |     C     |    C     |      R       |
+| User Stories                     |        A        |     R     |    C     |      C       |
+| Context Diagram                  |        C        |     C     |    R     |      C       |
+| RACI Matrix                      |        R        |     A     |    I     |      A       |
+| Meeting Minutes                  |        C        |     R     |    R     |      R       |
+
+
+
+## Task Assignments 
+
+Please see Github Project, and pull requests to see current assigned and in-progress tasks.
+
+* Justin: Scope Doc Primary 
+* Austin: User Story Primary 
+* Stuart: Context Diagram primary
+* Thom: Project Charter Primary
+
+All team members are expect to help any team member who needs assitance with their primary task. 
