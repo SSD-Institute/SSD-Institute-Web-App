@@ -11,13 +11,15 @@
 
 ### Matrix (draft)
 
-| Task / Activity                  | Project Manager | Developer | End-User | QA Developer |
+| Task / Activity                  |       Thom      | Austin    | Stuart   | Justin       |
 |----------------------------------|-----------------|-----------|----------|--------------|
-| Requirements Gathering           |        A        |           |          |      A       |
-| System Design                    |        R        |           |          |      R       |
-| Development & Coding             |        R        |           |          |      R       |
-| Testing & QA                     |        A        |           |          |      R       |
-| Deployment                       |        R        |           |          |      A       |
+| Project Charter                  |        R        |     C     |    C     |      C       |
+| Project Scope                    |        A        |     C     |    C     |      R       |
+| User Stories                     |        A        |     R     |    C     |      C       |
+| Context Diagram                  |        C        |     C     |    R     |      C       |
+| RACI Matrix                      |        R        |     A     |    I     |      A       |
+| Meeting Minutes                  |        C        |     R     |    R     |      R       |
+
 
 
 ## Task Assignments 
