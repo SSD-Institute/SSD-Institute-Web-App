@@ -5,10 +5,10 @@ An engagement web application for a start-up non-profit. Focused on consent of t
 
 The following links are a table of contents to our founding documentation 
 
-* [Project Charter](..docs/Founding/ProjectCharter.md)
-* [RACI Matrix](..docs/RACIMatrix.md)
-* [Project Scope](..docs/Founding/ProjectScope.md)
-* [Context Diagram](..docs/Founding/ContextDiagram.md)
+* [Project Charter](docs/Founding/ProjectCharter.md)
+* [RACI Matrix](docs/RACIMatrix.md)
+* [Project Scope](docs/Founding/ProjectScope.md)
+* [Context Diagram](docs/Founding/ContextDiagram.md)
 
 ## Contributions 
 
