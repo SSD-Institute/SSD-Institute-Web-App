@@ -18,7 +18,16 @@
 | User Stories                     |        A        |     R     |    C     |      C       |
 | Context Diagram                  |        C        |     C     |    R     |      C       |
 | RACI Matrix                      |        R        |     A     |    I     |      A       |
-| Meeting Minutes                  |        C        |     R     |    R     |      R       |
+| Meeting Minutes                  |        C        |     A     |    A     |      R       |
+| Data Flows                       |        C        |     A     |    R     |      C       |
+| Topology Diagram                 |        A        |     I     |    C     |      R       | 
+| Entity Relationship Diagrams     |        C        |     A     |    R     |      I       |
+| Technical Design Specs           |        C        |     R     |    A     |      I       |
+| Project Management Plan          |        R        |     C     |    C     |      A       | 
+| Video Walk Throughs              |        R        |     I     |    A     |      C       | 
+| Prototype                        |        R        |     R     |    R     |      R       | 
+| Team Status Documents            |        R        |     A     |    A     |      A       | 
+
 
 
 
@@ -26,9 +35,9 @@
 
 Please see Github Project, and pull requests to see current assigned and in-progress tasks.
 
-* Justin: Scope Doc Primary 
-* Austin: User Story Primary 
-* Stuart: Context Diagram primary
-* Thom: Project Charter Primary
+* Justin: Scope Doc Primary, Topology Diagram, Meeting Minutes
+* Austin: User Story Primary, Technical Design Specification
+* Stuart: Context Diagram primary, Data Flows, ERDs
+* Thom: Project Charter Primary, RACI, Project Management Plan, Video Walk throughs
 
 All team members are expect to help any team member who needs assitance with their primary task. 

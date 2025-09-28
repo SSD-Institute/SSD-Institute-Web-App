@@ -9,6 +9,8 @@ The following links are a table of contents to our founding documentation
 * [RACI Matrix](..docs/RACIMatrix.md)
 * [Project Scope](..docs/Founding/ProjectScope.md)
 * [Context Diagram](..docs/Founding/ContextDiagram.md)
+* [FAQ Doc](docs/Mission/FAQSSD.md)
+* [Governace Concepts](docs\Mission\GovernaceConcepts.md)
 
 ## Contributions 
 
