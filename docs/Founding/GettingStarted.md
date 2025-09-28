@@ -5,7 +5,9 @@
 This project uses **Flask** (Python web framework) and visualization libraries (**Plotly** and **D3.js**) to demonstrate governance and voting concepts.  
 Deployment is hosted on **PythonAnywhere**, and development is managed through **GitHub**.
 
-[See Flask app Version 1 SSD]()
+[See Flask app Version 1 SSD](https://github.com/SSD-Institute/Scientific-self-determination)
+
+
 ## 1. Python & Flask
 - Flask Documentation: https://flask.palletsprojects.com/
 - Flask is a lightweight Python framework for building web apps.
