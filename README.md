@@ -5,10 +5,12 @@ An engagement web application for a start-up non-profit. Focused on consent of t
 
 The following links are a table of contents to our founding documentation 
 
-* [Project Charter](docs/Founding/ProjectCharter.md)
-* [RACI Matrix](docs/Founding/RACIMatrix.md)
-* [Project Scope](docs/Founding/ProjectScope.md)
-* [Context Diagram](docs/Founding/ContextDiagram.md)
+* [Project Charter](..docs/Founding/ProjectCharter.md)
+* [RACI Matrix](..docs/RACIMatrix.md)
+* [Project Scope](..docs/Founding/ProjectScope.md)
+* [Context Diagram](..docs/Founding/ContextDiagram.md)
+* [FAQ Doc](docs/Mission/FAQSSD.md)
+* [Governace Concepts](docs\Mission\GovernaceConcepts.md)
 
 ## Contributions 
 
@@ -19,4 +21,8 @@ The following links are a table of contents to our founding documentation
 5. Notify team so someone can review; keep watch for comments
 6. Update issue in Github projects, DevOps will close
 
+
+[Getting Started Devs](docs/Founding/GettingStarted.md)
+
 We are a not currently open to contributions beyond our seed team at this time. Contributions may open to the public after May 2026.
+
