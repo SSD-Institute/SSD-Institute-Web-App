@@ -21,6 +21,8 @@ The following links are a table of contents to our founding documentation
 5. Notify team so someone can review; keep watch for comments
 6. Update issue in Github projects, DevOps will close
 
+
 [Getting Started Devs](docs/Founding/GettingStarted.md)
 
 We are a not currently open to contributions beyond our seed team at this time. Contributions may open to the public after May 2026.
+
