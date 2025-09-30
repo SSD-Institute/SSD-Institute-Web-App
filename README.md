@@ -1,7 +1,7 @@
 # SSD-Institute-Web-App
-An engagement web application for a start-up non-profit. Focused on consent of the governed and community involvment.
+An engagement web application for a start-up non-profit. Focused on consent of the governed and community involvement.
 
-## Founding Documention
+## Founding Documentation
 
 The following links are a table of contents to our founding documentation 
 
@@ -11,10 +11,11 @@ The following links are a table of contents to our founding documentation
 * [Context Diagram](docs/Founding/ContextDiagram.md)
 * [FAQ Doc](docs/Mission/FAQSSD.md)
 * [Governace Concepts](docs/Mission/GovernaceConcepts.md)
+* [User Stories](docs/Founding/UserStories.md)
 
 ## Contributions 
 
-1. Fork repositiry 
+1. Fork repository 
 2. Contribute in the fork with your changes 
 3. Pull upstream, and push your changes to your fork
 4. Open a pull request to the original repo
