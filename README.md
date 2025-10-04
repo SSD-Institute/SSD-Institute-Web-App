@@ -18,7 +18,6 @@ The following links are a table of contents to our founding documentation
 * [RACI Matrix](docs/Founding/RACIMatrix.md)
 
 ## Contributions 
-
 1. Fork repository 
 2. Contribute in the fork with your changes 
 3. Pull upstream, and push your changes to your fork
