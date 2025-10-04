@@ -1,4 +1,5 @@
 [Back to Read Me](../../README.md)
+
 # Scientific Self-Determination (SSD) Project FAQ
 
 ## Mission of the Organization
