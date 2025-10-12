@@ -6,15 +6,18 @@ An engagement web application for a start-up non-profit. Focused on consent of t
 The following links are a table of contents to our founding documentation 
 
 * [Project Charter](docs/Founding/ProjectCharter.md)
-* [RACI Matrix](docs/Founding/RACIMatrix.md)
-* [Project Scope](scopedoc.md)
+* [Project Scope](docs/Founding/scopedoc.md)
 * [Context Diagram](docs/Founding/ContextDiagram.md)
 * [FAQ Doc](docs/Mission/FAQSSD.md)
 * [Governace Concepts](docs/Mission/GovernaceConcepts.md)
 * [User Stories](docs/Founding/UserStories.md)
+* [Topology Diagram](docs/Founding/toplogyDiagram.png)
+
+## Our Progress
+* [Meeting Minutes](docs/Meeting_Minutes/)
+* [RACI Matrix](docs/Founding/RACIMatrix.md)
 
 ## Contributions 
-
 1. Fork repository 
 2. Contribute in the fork with your changes 
 3. Pull upstream, and push your changes to your fork

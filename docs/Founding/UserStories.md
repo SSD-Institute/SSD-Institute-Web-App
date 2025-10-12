@@ -1,3 +1,5 @@
+[Back to README.md](../../README.md)
+
 # User Stories
 
 User stories provide valuable feedback on how the intended users of the software will actually interact with it, as well as what features they need or expect to see. We have identified 3 core user groups that will be interacting with the finished project: the general public, the non-profit volunteers/staff that will have to administer the final software, and the core development team.
