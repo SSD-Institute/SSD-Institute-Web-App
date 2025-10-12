@@ -40,9 +40,44 @@ With a total of fifteen user stories, which will be implemented for the general 
 
 See [User Stories](UserStories.md)
 
-## Anticipated Completion 
+## Anticipated Completion
 
-This web application is planned to be completed on May 1st 2026, deployed for public access via Python Anywhere.
+### Milestones 
+
+**End of December 2025 - Semeter 1**
+
+* Full founding documentation available on Github (I.e: Concepts, Charter, Scope, FAQ, User Stores, etc)
+* A prototype displaying all four potential visualizations and documentation in an example 
+* The seeding of the framework (Flask) pushed to the main repository
+
+**End of April 2026**
+
+* Three visualizations for collaberative veto, supreme court check and Multi-voting
+* Clear documentation with each visuilzation one portion explaining concept the other impact
+* Hosted for the general public to see with SSL, HTTPS connections via Python Anywhere servers
+* Updatable in a clear way via Github repo and commits for future SSD Institute affiliates 
+
+This Flask, Gunicorn web application with three Ploty, and optional one D3.js visualizations is planned to be completed on May 1st 2026, deployed for public access via Python Anywhere so citizens can view the GUI interface and documentation.
+
+## Functional Scope Table
+
+### Functional Scope
+
+| Feature / Functionality | Description | Priority | Deliverable Phase |
+|--------------------------|--------------|-----------|-------------------|
+| **Static Concept Pages** | Written explanations (≥500 words each) of Collaborative Veto, Multi-choice Voting, Supreme Court Veto, and Minimum Space concepts. | Core | MVP |
+| **Plotly Visualizations (3)** | Static charts for Collaborative Veto (county/state view), Multi-choice Voting (bar chart), and Supreme Court Veto (choropleth map). | Core | MVP |
+| **Documentation Pages** | Clear markdown documentation including FAQ, Concepts, Scope, Charter, User Stories, Getting Started. | Core | MVP |
+| **Civic Impact Section** | 250-word civic impact analysis accompanying each governance concept. | Core | MVP |
+| **Flask Web Framework Setup** | Functional Flask app hosted on PythonAnywhere with Gunicorn, HTTPS, and GitHub integration. | Core | MVP |
+| **Mobile Responsiveness** | CSS styling to ensure public usability on phones/tablets. | Core | MVP |
+| **GitHub Version Control** | Active Git repository with issues, milestones, and clear commit messages. | Core | MVP |
+| **D3.js Visualization (Minimum Space)** | Land allocation concept visualization (treemap/cartogram) based on population and land data. | Stretch | Phase 2 |
+| **Interactive Map Functionality** | Basic click/hover tooltips or toggles for states/counties in Plotly visualizations. | Stretch | Phase 2 |
+| **User Feedback Form** | Simple contact form for users to submit feedback or questions. | Stretch | Phase 2 |
+| **Automated Updates** | Scripts to refresh data or regenerate charts dynamically. | Stretch | Phase 2 |
+| **Expanded Publications Feature** | Blog-like section accessible to Institute staff for updates or papers. | Stretch | Phase 2 |
+
 
 ## Approved Budgets
 
@@ -54,10 +89,15 @@ This web application is planned to be completed on May 1st 2026, deployed for pu
 
 Here is the roles and responsibilities of each member of the initial team
 
-* Justin Maga: Dev, and Minute/Note-taker 
-* Austin Pringle: Sr Dev, and Business Analyst
-* Stuart Krugger: QA, DevOps, and Content Writer
-* Thom Mo: Project Manager, and Dev
+* Justin Maga: Dev, Minute/Note-taker, Backup Business Analyst, Backup Documentation Reviewer
+* Austin Pringle: Sr Dev, Business Analyst, Backup Devops
+* Stuart Krugger: QA, DevOps, Content Writer, Backup Project Manager
+* Thom Mo: Project Manager, Dev, QA backup, DevOps, Documentation Reviewer
 
-## Sign off of stake holders 
+## Sign off of Stake holders 
 
+* I Thom J Mondeaux, non profit liason and project manager, Sign off on this Project. 
+
+* We the JAST Team Sign off on this project as Developers.
+
+* I Joe Pek sign off on this project as Non-Profit coordinator.
