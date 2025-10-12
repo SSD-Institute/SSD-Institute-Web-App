@@ -32,6 +32,17 @@ The project will also focus on making innovative political models, such as those
 By aggregating and simplifying this disparate data, the project aims to ensure every citizen understands the full context of the decisions they make at the ballot box. The primary operational focus is to aggregate, simplify, and disseminate public information, particularly emphasizing local factors that will affect the community's decision, such as **detailed budget reports, major development proposals, and public meeting transcripts**. All information will be rigorously sourced from verifiable public records, with clear indicators showing whether a decision's authority stems from legislation passed by lawmakers, court documents, or administrative actions.
 
 ---
+## Measurable Objectives (Evaluation Outcomes)
+
+The project will be evaluated against the following measurable outcomes:
+
+| Objective | Target |
+| :--- | :--- |
+| **Timeliness** | Achieve a target of 100% of legislative updates correctly summarized within 24 hours of publication. |
+| **Readability** | Maintain an Average readability score (Flesch-Kincaid grade $\le 10$) for all plain-language summaries. |
+| **Responsiveness** | Maintain an Average response time $< 3$ seconds for user queries. |
+| **Usability** | Incorporate feedback from limited user testing (5–10 participants) to assess clarity, accuracy, and accessibility of the interface. |
+---
 
 ## System Capabilities
 
@@ -83,3 +94,4 @@ The platform must balance transparency with legal and ethical responsibility.
 | **Legal/Ethical Boundaries** | **Sensitive personal data** may need to be redacted. Some documents may be restricted by **copyright, paywalls, or jurisdictional limits**. |
 | **Misinformation Risk** | Frequent updates to legislation and court rulings require **version control** to avoid misinformation. |
 | **Liability** | All content must be **clearly sourced and accompanied by disclaimers** to protect against liability. 
+| **Future Enhancements** | AI/automation (LLMs for summarization) will be restricted to a future enhancement, not a core deliverable for the capstone. |
