@@ -27,8 +27,9 @@
 | Video Walk Throughs              |        R        |     I     |    A     |      C       | 
 | Prototype                        |        R        |     R     |    R     |      R       | 
 | Team Status Documents            |        R        |     A     |    A     |      A       | 
-
-
+| Data Flow Diagrams               |        A        |     R     |    R     |      R       | 
+| ER Diagrams                      |        A        |     R     |    R     |      R       | 
+| Prototype and Wireframe          |        R        |     R     |    R     |      R       |
 
 
 ## Task Assignments 
