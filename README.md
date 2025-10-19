@@ -12,6 +12,7 @@ The following links are a table of contents to our founding documentation
 * [Governace Concepts](docs/Mission/GovernaceConcepts.md)
 * [User Stories](docs/Founding/UserStories.md)
 * [Topology Diagram](docs/Founding/toplogyDiagram.png)
+* [Context Diagram](docs/Founding/Context_Diagram.png)
 
 ## Our Progress
 * [Meeting Minutes](docs/Meeting_Minutes/)
