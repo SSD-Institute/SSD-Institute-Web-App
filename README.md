@@ -7,12 +7,13 @@ The following links are a table of contents to our founding documentation
 
 * [Project Charter](docs/Founding/ProjectCharter.md)
 * [Project Scope](docs/Founding/scopedoc.md)
-* [Context Diagram](docs/Founding/ContextDiagram.md)
 * [FAQ Doc](docs/Mission/FAQSSD.md)
 * [Governace Concepts](docs/Mission/GovernaceConcepts.md)
 * [User Stories](docs/Founding/UserStories.md)
 * [Topology Diagram](docs/Founding/toplogyDiagram.png)
 * [Context Diagram](docs/Founding/Context_Diagram.png)
+* [ERD Diagram](docs/Founding/erd.png)
+
 
 ## Our Progress
 * [Meeting Minutes](docs/Meeting_Minutes/)
