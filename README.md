@@ -12,7 +12,7 @@ The following links are a table of contents to our founding documentation
 * [User Stories](docs/Founding/UserStories.md)
 * [Topology Diagram](docs/Founding/toplogyDiagram.png)
 * [Context Diagram](docs/Founding/Context_Diagram.png)
-* [ERD Diagram](docs/Founding/ERD.png)
+* [ERD Diagram](docs/Founding/erd.png)
 
 
 ## Our Progress
