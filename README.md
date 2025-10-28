@@ -11,7 +11,6 @@ The following links are a table of contents to our founding documentation
 * [Governace Concepts](docs/Mission/GovernaceConcepts.md)
 * [User Stories](docs/Founding/UserStories.md)
 * [Topology Diagram](docs/Founding/toplogyDiagram.png)
-* [Context Diagram](docs/Founding/Context_Diagram.png)
 * [ERD Diagram](docs/Founding/erd.png)
 * [DFD Level 0](docs/Founding/DFD0AndBriefText.md)
 * [DFD Level 1](docs/Founding/DFD1AndBriefText.md)
