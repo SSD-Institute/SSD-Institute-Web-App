@@ -6,6 +6,11 @@
 
 **Purpose:** Show the entire SSD Institute Web App as one process and its interaction with external entities.
 
+**Please see Legacy DFDs as they were a reference** 
+
+![DFD Level 0 Legacy](Legacy/Context_Diagram.png)
+![DFD Level 0 Legacy 2](Legacy/DFD%200.png)
+
 ### Entities
 
 - SSD Institute Staff
