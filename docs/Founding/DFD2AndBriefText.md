@@ -44,7 +44,7 @@
 0.3.4 Update Version Control – Push updated docs to GitHub.
 
 ### Hosting / Github
-![Hosting DFD Level 2](DFDLevel2Hosting.png)
+![Hosting DFD Level 2](DFDLevel2HostingVersion2.png)
 
 **Process 0.4 — Hosting & Version Control**
 
@@ -57,7 +57,7 @@
 - 0.4.4 Monitor Performance – Check uptime and error logs.
 
 ### User Interaction
-![User Interaction DFD Level 2](DFDLevel2Public.png)
+![User Interaction DFD Level 2](DFDLevel2UserInteractionVersion2.png)
 
 **Process 0.5 — User Interaction / Feedback**
 
