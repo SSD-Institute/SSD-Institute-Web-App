@@ -1,4 +1,4 @@
-[Back to read me](../../README.md)
+[Back to read me](../../../README.md)
 
 # DFD Level 0 — Context Diagram
 
@@ -8,8 +8,8 @@
 
 **Please see Legacy DFDs as they were a reference** 
 
-![DFD Level 0 Legacy](Legacy/Context_Diagram.png)
-![DFD Level 0 Legacy 2](Legacy/DFD%200.png)
+![DFD Level 0 Legacy](../Legacy/Context_Diagram.png)
+![DFD Level 0 Legacy 2](../Legacy/DFD%200.png)
 
 ### Entities
 

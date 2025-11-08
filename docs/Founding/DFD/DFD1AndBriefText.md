@@ -1,4 +1,4 @@
-[Back to read me](../../README.md)
+[Back to read me](../../../README.md)
 
 # DFD Level 1
 
@@ -9,7 +9,7 @@
 
 **Please see Legacy DFDs as they were a reference** 
 
-![DFD 1 Legacy](Legacy/DFD%201.png)
+![DFD 1 Legacy](../Legacy/DFD%201.png)
 
 ### Process 0.1 — Content Management
 
