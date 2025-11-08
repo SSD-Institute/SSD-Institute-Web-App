@@ -10,11 +10,11 @@ The following links are a table of contents to our founding documentation
 * [FAQ Doc](docs/Mission/FAQSSD.md)
 * [Governace Concepts](docs/Mission/GovernaceConcepts.md)
 * [User Stories](docs/Founding/UserStories.md)
-* [Topology Diagram](docs/Founding/toplogyDiagram.png)
+* [Topology Diagram](docs/Founding/IMG/toplogyDiagram.png)
 * [ERD Diagram](docs/Founding/erdandtext.md)
-* [DFD Level 0](docs/Founding/DFD0AndBriefText.md)
-* [DFD Level 1](docs/Founding/DFD1AndBriefText.md)
-* [DFD Level 2](docs/Founding/DFD2AndBriefText.md)
+* [DFD Level 0](docs/Founding/DFD/DFD0AndBriefText.md)
+* [DFD Level 1](docs/Founding/DFD/DFD1AndBriefText.md)
+* [DFD Level 2](docs/Founding/DFD/DFD2AndBriefText.md)
 
 ## Our Progress
 * [Meeting Minutes](docs/Meeting_Minutes/)
