@@ -30,6 +30,12 @@
 | Data Flow Diagrams               |        A        |     R     |    R     |      R       | 
 | ER Diagrams                      |        A        |     R     |    R     |      R       | 
 | Prototype and Wireframe          |        R        |     R     |    R     |      R       |
+| Project Plan                     |        R        |     C     |    A     |      I       |
+| Screen Sequence                  |        R        |     C     |    A     |      I       |
+| File Restructure                 |        A        |     I     |    I     |      R       |
+| Technical Specifications Doc     |        A        |     R     |    C     |      C       |
+| Logical and Conceptual ERDs      |        A        |     I     |    R     |      I       |
+| Setup Dependencies for Flask Dev |        R        |     R     |    R     |      R       |
 
 
 ## Task Assignments 
