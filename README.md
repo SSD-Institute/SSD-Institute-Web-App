@@ -16,6 +16,7 @@ The following links are a table of contents to our founding documentation
 * [DFD Level 1](docs/Founding/DFD/DFD1AndBriefText.md)
 * [DFD Level 2](docs/Founding/DFD/DFD2AndBriefText.md)
 * [Screen Sequence](docs/Founding/ScreenSequenceIMG/ScreenSequence.md)
+* [Project Plan](docs/Founding/ProjectPlan/ProjectPlan.md)
 
 ## Our Progress
 * [Meeting Minutes](docs/Meeting_Minutes/)
