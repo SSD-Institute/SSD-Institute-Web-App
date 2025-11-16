@@ -1,4 +1,4 @@
-[Back to README.md](../../README.md)
+[Back to README.md](../../../README.md)
 
 # Project Plan
 
@@ -7,7 +7,7 @@ This is the basic project plan and links to details for the project plan.
 ## WBS
 
 **Work Breakdown Structure (WBS)**
-Level 1 — SSD Web App
+*Level 1 — SSD Web App*
 1.0 Project Management
 1.1 Meeting minutes, RACI, updates
 2.0 Flask Framework
@@ -33,6 +33,11 @@ Level 1 — SSD Web App
 
 ## Gahntt Chart Image
 
+Please go to SSD-Institute Organization > Projects > SSD Workflow 
+and click the "RoadMap", this is if you have contributer access; if you don't 
+you can request it from Thommond / Thom on Github. 
+
 ## Github Project at Start
 
-##
+![Sprint Image 1](SprintsImage2.png)
+![Sprint Image 2](SprintsImage1.png)
