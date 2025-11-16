@@ -1,4 +1,4 @@
-[Back to README.md](../../README.md)
+[Back to README.md](../../../README.md)
 
 # Screen Sequence in Images
 
@@ -25,7 +25,10 @@ Below is a embeded PDF with drawings.
 - **Mobile Layout:** Stacked layout with simplified navigation and icons at bottom
 
 **URL:** /home  
-**User Story:** US-0 – As a citizen, I want to visit the site and understand its mission and purpose  
+Home / Landing Page
+**User Story:**
+As a citizen, I want to visit the site and read clear, updated definitions of governance models so that I understand concepts like “collaborative veto,” “multiple choice voting,” and “supreme court veto.” The pages should be dated so that I can determine their recency, be reviewed for accuracy, and displayed in a legible and accessible format. (Priority: High)
+
 **Sprint:** Sprint 1 – Jan 20–Feb 2
 
 ![Home Mobile](MobileLandingPage.png)
@@ -40,7 +43,9 @@ Below is a embeded PDF with drawings.
 - **Footer:** © 2023 Scientific Self-Determination + contact@scientificselfdetermination.com
 
 **URL:** /home  
-**User Story:** US-0 – As a citizen, I want to understand the organization’s purpose and navigate easily  
+**User Story:**
+As a citizen, I want to visit the site and read clear, updated definitions of governance models so that I understand concepts like “collaborative veto,” “multiple choice voting,” and “supreme court veto.” The pages should be dated so that I can determine their recency, be reviewed for accuracy, and displayed in a legible and accessible format. (Priority: High)
+
 **Sprint:** Sprint 1 – Jan 20–Feb 2
 
 ![Home Desktop](DesktopLandingPage.png)
@@ -59,7 +64,9 @@ Below is a embeded PDF with drawings.
 - **Mobile Layout:** Stacked content with simplified map and text
 
 **URL:** /collaborative-veto  
-**User Story:** US-4 – As a citizen, I want to see a county-level map for Wyoming showing veto variation  
+**User Story:**
+As a citizen, I want to see a county-level map for West Virginia showing which counties would veto a state law, so I can understand local regional variation. The map should support all of the expected features of a modern embedded map and comply with all applicable accessibility features. (Priority: High)
+
 **Sprint:** Sprint 5 – Mar 23–Apr 5
 
 ![Collaborative Veto Mobile](CollaberativeVetoMobilePage.png)
@@ -74,7 +81,8 @@ Below is a embeded PDF with drawings.
 - **Footer:** Navigation links + contact@SignificantSelfDetermination.com
 
 **URL:** /collaborative-veto  
-**User Story:** US-4 – As a citizen, I want to see a county-level map for Wyoming showing veto variation  
+**User Story:**
+As a citizen, I want to see a county-level map for West Virginia showing which counties would veto a state law, so I can understand local regional variation. The map should support all of the expected features of a modern embedded map and comply with all applicable accessibility features. (Priority: High)
 **Sprint:** Sprint 5 – Mar 23–Apr 5
 
 ![Collaberative Veto Desktop](CollaberativeVetoDeskopPage.png)
@@ -93,7 +101,8 @@ Below is a embeded PDF with drawings.
 - **Mobile Layout:** Stacked layout with simplified map and text
 
 **URL:** /supreme-court-check  
-**User Story:** US-3 – As a citizen, I want to see a US choropleth map showing veto thresholds  
+**User Story:**
+As a citizen, I want to see a US state-level choropleth map with states proportionally colored based on whether 26 or more object to a supreme court veto, so that I can visually see if the veto threshold is met. The map must have a legend that is visible and descriptive, the data sources used must be clearly cited; and hover text must include exact counts. (Priority: High)
 **Sprint:** Sprint 4 – Mar 2–Mar 22
 
 ![Supreme Court Check Mobile](SupremeCourtCheckMobilePage.png)
@@ -109,7 +118,9 @@ Below is a embeded PDF with drawings.
 - **Footer:** Social media icons + contact@scientificselfdetermination.com
 
 **URL:** /supreme-court-check  
-**User Story:** US-3 – As a citizen, I want to see a US choropleth map showing veto thresholds  
+**User Story:**
+As a citizen, I want to see a US state-level choropleth map with states proportionally colored based on whether 26 or more object to a supreme court veto, so that I can visually see if the veto threshold is met. The map must have a legend that is visible and descriptive, the data sources used must be clearly cited; and hover text must include exact counts. (Priority: High)
+
 **Sprint:** Sprint 4 – Mar 2–Mar 22
 
 ![Supreme Court Check Desktop](SupremeCourtCheckDesktopPage.png)
@@ -128,7 +139,9 @@ Below is a embeded PDF with drawings.
 - **Mobile Layout:** Simplified chart and stacked text
 
 **URL:** /multiple-choice-voting  
-**User Story:** US-2 – As a citizen, I want to view a bar chart showing candidate approval totals  
+**User Story:**
+As a citizen, I want to view a Plotly bar chart showing candidate approval totals under multiple choice voting so that I can compare how many citizens support each candidate. To be acceptable, the visualization should load quickly (> 3s) and be clearly labelled and legible. (Priority: High)
+
 **Sprint:** Sprint 3 – Feb 17–Mar 1
 
 ![Multiple Choice Voting Mobile](MultipleChoiceVotingPage.png)
@@ -143,7 +156,8 @@ Below is a embeded PDF with drawings.
 - **Footer:** contact@scientificselfdetermination.org
 
 **URL:** /multiple-choice-voting  
-**User Story:** US-2 – As a citizen, I want to view a bar chart showing candidate approval totals  
+**User Story:**
+As a citizen, I want to view a Plotly bar chart showing candidate approval totals under multiple choice voting so that I can compare how many citizens support each candidate. To be acceptable, the visualization should load quickly (> 3s) and be clearly labelled and legible. (Priority: High) 
 **Sprint:** Sprint 3 – Feb 17–Mar 1
 
 ![Multiple Choice Voting Desktop](MultipleChoiceVotingDesktopPage.png)
@@ -162,7 +176,8 @@ Below is a embeded PDF with drawings.
 - **Mobile Layout:** Stacked layout with simplified map and metrics
 
 **URL:** /minimum-space  
-**User Story:** US-6 – As a citizen, I want to see a spatial map showing minimum space allocation  
+**User Story:** As a citizen, I want to view a Plotly bar chart showing candidate approval totals under multiple choice voting so that I can compare how many citizens support each candidate. To be acceptable, the visualization should load quickly (> 3s) and be clearly labelled and legible. (Priority: High)
+ 
 **Sprint:** Sprint 7 – Apr 20–May 3
 
 ![Minimum Space Mobile](MinimumAmountOfSpacePage.png)
@@ -177,7 +192,8 @@ Below is a embeded PDF with drawings.
 - **Footer:** contact@scientificselfdetermination.com
 
 **URL:** /minimum-space  
-**User Story:** US-6 – As a citizen, I want to see a spatial map showing minimum space allocation  
+**User Story:** As a citizen, I want to view a Plotly bar chart showing candidate approval totals under multiple choice voting so that I can compare how many citizens support each candidate. To be acceptable, the visualization should load quickly (> 3s) and be clearly labelled and legible. (Priority: High)
+ 
 **Sprint:** Sprint 7 – Apr 20–May 3
 
 ![Minimum Space Desktop](MinimumAmountOfSpaceDesktop.png)
@@ -191,12 +207,15 @@ Below is a embeded PDF with drawings.
 **Key Elements**
 - **Header:** “Scientific Self Determination”
 - **Main Content:** Contact message and details (email, phone, location)
-- **Resources Section:** Blog, FAQ
+- **Resources Section:**   FAQ, link for more information on project
 - **Footer/Call-to-Action:** Social media icons + contact@scientificsd.com
 - **Mobile Layout:** Stacked layout with icons and links
 
 **URL:** /contact  
-**User Story:** US-7 – As a citizen, I want to access contact info and resources easily  
+**User Storys:** As a citizen accessing the site, I want to be sure that the site is secure, and uses the most up-to-date security features. It should implement HTTPS, for instance. (Priority: High)
+And:
+As a non-profit admin, I want the documentation content to be organized and written with updated and timely examples so that educational materials are clearer and more engaging. Documentation should include visuals, clear headings, and be version-controlled. (Priority: High)
+
 **Sprint:** Sprint 8 – May 4–May 8
 
 ![Contact Mobile](ContactUsMobilePage.png)
@@ -207,12 +226,52 @@ Below is a embeded PDF with drawings.
 - **Header:** “Contact Us”
 - **Main Content:** Message inviting collaboration and support
 - **Contact Info:** Email, phone, office location
-- **Visual:** Image of people joining hands in a circle
-- **Resources Section:** Blog, FAQ, social media links
-- **Footer:** contact@scientificselfdetermination.com + © 2023 SSD
+- **Visual:** Inviting image
+- **Resources Section:** FAQ, social media links, links related to project
+- **Footer:** contact@scientificselfdetermination.com + © 2026 SSD
 
 **URL:** /contact  
-**User Story:** US-7 – As a citizen, I want to access contact info and resources easily  
+**User Storys:**As a citizen accessing the site, I want to be sure that the site is secure, and uses the most up-to-date security features. It should implement HTTPS, for instance. (Priority: High)
+And:
+As a non-profit admin, I want the documentation content to be organized and written with updated and timely examples so that educational materials are clearer and more engaging. Documentation should include visuals, clear headings, and be version-controlled. (Priority: High)
+
 **Sprint:** Sprint 8 – May 4–May 8
 
 ![Contact Desktop](ContactUsDesktopPage.png)
+
+--- 
+
+## Page Sequence: Menu & Navigation
+
+### Mobile
+
+**Key Elements**
+- **Header:** “Scientific Self Determination”
+- **Navigation Menu:** Vertical list with links to Collaborative Veto, Supreme Court Check, Multiple Choice Voting, Contact Us, FAQ, Blog, Resources, Minimum Space
+- **Footer/Call-to-Action:** Social media icons (Facebook, Twitter, LinkedIn, Instagram) + contact@ssd.org
+- **Mobile Layout:** Stacked navigation with icons at bottom
+
+**URL:** N/A  
+**User Story:**  
+As a citizen, I want to visit the site and read clear, updated definitions of governance models so that I understand concepts like “collaborative veto,” “multiple choice voting,” and “supreme court veto.” The pages should be dated so that I can determine their recency, be reviewed for accuracy, and displayed in a legible and accessible format. (Priority: High)
+
+**Sprint:** Sprint 2 – Feb 3–Feb 16
+
+![Menu Mobile](MobileMenuPage.png)
+
+### Desktop
+
+**Key Elements**
+- **Header:** “Empowering Informed Decisions Through Data and Dialogue”
+- **Navigation Menu (Left):** Links to Collaborative Veto, Supreme Court Check, Multiple Choice Voting, Contact Us, FAQ, Resources, Minimum Space
+- **Main Content:** Paragraph describing SSD’s mission and methodology
+- **Visual:** Abstract 3D bubble-like illustration
+- **Footer:** contact@scientificselfdetermination.org + © 2023 SSD
+
+**URL:** N/A  
+**User Story:**  
+As a citizen, I want to visit the site and read clear, updated definitions of governance models so that I understand concepts like “collaborative veto,” “multiple choice voting,” and “supreme court veto.” The pages should be dated so that I can determine their recency, be reviewed for accuracy, and displayed in a legible and accessible format. (Priority: High)
+
+**Sprint:** Sprint 2 – Feb 3–Feb 16
+
+![Menu Desktop](DesktopMenuViewPage.png)
