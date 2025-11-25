@@ -11,12 +11,13 @@ The following links are a table of contents to our founding documentation
 * [Governace Concepts](docs/Mission/GovernaceConcepts.md)
 * [User Stories](docs/Founding/UserStories.md)
 * [Topology Diagram](docs/Founding/IMG/toplogyDiagram.png)
-* [ERD Diagram](docs/Founding/erdandtext.md)
+* [ERD Diagram](docs/Founding/ERD/erdandtext.md)
 * [DFD Level 0](docs/Founding/DFD/DFD0AndBriefText.md)
 * [DFD Level 1](docs/Founding/DFD/DFD1AndBriefText.md)
 * [DFD Level 2](docs/Founding/DFD/DFD2AndBriefText.md)
 * [Screen Sequence](docs/Founding/ScreenSequenceIMG/ScreenSequence.md)
 * [Project Plan](docs/Founding/ProjectPlan/ProjectPlan.md)
+* [Database Script](docs/Founding/DBScript.sql)
 
 ## Our Progress
 * [Meeting Minutes](docs/Meeting_Minutes/)
