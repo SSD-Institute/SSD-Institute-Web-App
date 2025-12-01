@@ -1,13 +1,16 @@
 
 /* Stretch goal and most likely will not get to this, but it is theoretical for future sprints.*/
 
-TABLE Role (
+CREATE DATABASE SSDInstituteDB;
+USE SSDInstituteDB;
+
+CREATE TABLE Role (
   role_id INT PRIMARY KEY AUTO_INCREMENT,
   role_name VARCHAR(50) NOT NULL,
   permissions TEXT NOT NULL
 );
 
-TABLE User (
+CREATE TABLE User (
   user_id INT PRIMARY KEY AUTO_INCREMENT,
   role_id INT NOT NULL,
   first_name VARCHAR(50) NOT NULL,
@@ -19,7 +22,7 @@ TABLE User (
   FOREIGN KEY (role_id) REFERENCES Role(role_id)
 );
 
-TABLE Document (
+CREATE TABLE Document (
   doc_id INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(200) NOT NULL,
   author_id INT NOT NULL,
@@ -30,7 +33,7 @@ TABLE Document (
   FOREIGN KEY (author_id) REFERENCES User(user_id)
 );
 
-TABLE Dataset (
+CREATE TABLE Dataset (
   dataset_id INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(200) NOT NULL,
   source VARCHAR(200),
@@ -42,7 +45,7 @@ TABLE Dataset (
   FOREIGN KEY (owner_id) REFERENCES User(user_id)
 );
 
-TABLE Version (
+CREATE TABLE Version (
   version_id INT PRIMARY KEY AUTO_INCREMENT,
   dataset_id INT NOT NULL,
   version_number VARCHAR(10),
@@ -51,15 +54,7 @@ TABLE Version (
   FOREIGN KEY (dataset_id) REFERENCES Dataset(dataset_id)
 );
 
-TABLE Concept (
-  concept_id INT PRIMARY KEY AUTO_INCREMENT,
-  title VARCHAR(150) NOT NULL,
-  description TEXT,
-  civic_impact_id INT,
-  created_at DATETIME NOT NULL
-);
-
-TABLE CivicImpact (
+CREATE TABLE CivicImpact (
   impact_id INT PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(150) NOT NULL,
   description TEXT,
@@ -68,7 +63,16 @@ TABLE CivicImpact (
   updated_at DATETIME
 );
 
-TABLE Visualization (
+CREATE TABLE Concept (
+  concept_id INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(150) NOT NULL,
+  description TEXT,
+  civic_impact_id INT,
+  created_at DATETIME NOT NULL,
+  FOREIGN KEY (civic_impact_id) REFERENCES CivicImpact(impact_id)
+);
+
+CREATE TABLE Visualization (
   vis_id INT PRIMARY KEY AUTO_INCREMENT,
   user_id INT NOT NULL,
   dataset_id INT,
@@ -83,7 +87,7 @@ TABLE Visualization (
   FOREIGN KEY (concept_id) REFERENCES Concept(concept_id)
 );
 
-TABLE Simulation (
+CREATE TABLE Simulation (
   sim_id INT PRIMARY KEY AUTO_INCREMENT,
   vis_id INT NOT NULL,
   parameters TEXT,
@@ -92,7 +96,7 @@ TABLE Simulation (
   FOREIGN KEY (vis_id) REFERENCES Visualization(vis_id)
 );
 
-TABLE Feedback (
+CREATE TABLE Feedback (
   feed_id INT PRIMARY KEY AUTO_INCREMENT,
   user_id INT NOT NULL,
   vis_id INT NOT NULL,
@@ -103,7 +107,7 @@ TABLE Feedback (
   FOREIGN KEY (vis_id) REFERENCES Visualization(vis_id)
 );
 
-TABLE BlogPost (
+CREATE TABLE BlogPost (
   blog_id INT PRIMARY KEY AUTO_INCREMENT,
   author_id INT NOT NULL,
   doc_id INT,
@@ -111,7 +115,5 @@ TABLE BlogPost (
   content TEXT NOT NULL,
   created_at DATETIME NOT NULL,
   category VARCHAR(50),
-  status ENUM('draft', 'review', 'published') DEFAULT 'draft',
-  FOREIGN KEY (author_id) REFERENCES User(user_id),
-  FOREIGN KEY (doc_id) REFERENCES Document(doc_id)
-);
+  status ENUM('draft', 'review', 'published')
+)
