@@ -31,6 +31,32 @@ The following links are a table of contents to our founding documentation
 5. Notify team so someone can review; keep watch for comments
 6. Update issue in Github projects, DevOps will close
 
+## Website 
+* [Home Page](SSDFlask/templates/home.html) 
+* [data Processed](SSDflask/data/processed/)
+* [data Raw](SSDflask/data/raw/)
+* [data Sample](SSDflask/data/sample/)
+* [Accessibility](docs/Accessibility/)  
+* [Style sheet](SSDFlask/static/style.css)
+ 
+## Sprints
+ * [Sprint 1](docs/sprints/SprintOne/)
+ * [Sprint 1 Video](docs/sprints/SprintOne/)
+ * [Sprint 2](docs/sprints/SprintTwo/)
+ * [Sprint 2 Video](docs/sprints/SprintTwo/)
+ * [Sprint 3](docs/sprints/SprintThree/)
+ * [Sprint 3 Video](docs/sprints/SprintThree/)
+ * [Sprint 4](docs/sprints/SprintFour/)
+ * [Sprint 4 Video](docs/sprints/SprintFour/)
+ * [Sprint 5](docs/sprints/SprintFive/)
+ * [Sprint 5 Video](docs/sprints/SprintFive/)
+ * [Sprint 6](docs/sprints/SprintSix/)
+ * [Sprint 6 Video](docs/sprints/SprintSix/)
+ * [Sprint 7](docs/sprints/SprintSeven/)
+ * [Sprint 7 Video](docs/sprints/SprintSeven/)
+ * [Sprint 8](docs/sprints/SprintEight/)
+ * [Sprint 8 Video](docs/sprints/SprintEight/)
+
 [Getting Started Devs](docs/Founding/GettingStarted.md)
 
 We are a not currently open to contributions beyond our seed team at this time. Contributions may open to the public after May 2026.
