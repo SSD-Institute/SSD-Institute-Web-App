@@ -40,7 +40,7 @@ The following links are a table of contents to our founding documentation
 * [Style sheet](SSDFlask/static/style.css)
  
 ## Sprints
- * [Sprint 1](docs/sprints/SprintOne/)
+ * [Sprint 1](docs/sprints/SprintOne/SprintLogOne.md)
  * [Sprint 1 Video](docs/sprints/SprintOne/)
  * [Sprint 2](docs/sprints/SprintTwo/)
  * [Sprint 2 Video](docs/sprints/SprintTwo/)
