@@ -1,0 +1,76 @@
+# Scientific Self-Determination: Data Integration Architecture (Expanded Technical Specs)
+
+---
+
+## 1. Collaborative Veto Page
+**Target Interface:** ['CollaborativeVetoDeskopPage.png'](../../../docs/Founding/ScreenSequenceIMG/CollaberativeVetoDeskopPage.png) 
+**Objective:** Map federal and state hierarchies to simulate a localized, cascading veto mechanism.
+
+### Methodology & Data Depth
+* **The "Universe" of Government:** By utilizing the **Census of Governments**, we don't just see "States," but a relational database of all 89,000+ General Purpose and Special Purpose governments. 
+    * **Data Source:** [Census Bureau - Census of Governments](https://www.census.gov/programs-surveys/cog.html)
+* **The Veto Algorithm:** The backend implements a "bottom-up" consensus check. 
+    * **Logic:** `IF (Veto_Count / Total_Municipal_Units) >= 0.33 THEN County_Veto = TRUE`.
+* **Legal Preemption Mapping:** We use the **Congressional Research Service (CRS)** reports to categorize laws by "Preemption Level." 
+    * **Data Source:** [CRS Report - Federalism & State Sovereignty](https://digital.library.unt.edu/ark:/67531/metacrs5387/)
+    * **Application:** This allows the UI to highlight "Soft Targets", areas like local zoning or education where state/local autonomy is legally robust, versus "Hard Targets" like National Defense.
+* **Historical Logic:** We utilize **ACIR (Advisory Commission on Intergovernmental Relations)** reports to understand the "Home Rule" status of different counties.
+    * **Data Source:** [ACIR Reports Digital Archive](https://library.unt.edu/gpo/acir/index.html)
+    * **Application:** This weights the "Veto" power differently depending on the state’s historical stance on local autonomy.
+
+
+
+---
+
+## 2. Multi-choice Voting Page
+**Target Interface:** [`MultipleChoiceVotingDesktopPage.png`](../../../docs/Founding/ScreenSequenceIMG/MultipleChoiceVotingDesktopPage.png) 
+**Objective:** Provide technical legitimacy for the UI's alternative voting interfaces.
+
+### Methodology & Data Depth
+* **Security & Interoperability:** To move beyond a "web poll," the UI adheres to the **VVSG 2.0 (Voluntary Voting System Guidelines)**.
+    * **Data Source:** [NIST/EAC - VVSG 2.0 Requirements](https://www.eac.gov/voting-equipment/voluntary-voting-system-guidelines)
+    * **Application:** This ensures that the simulation uses the same "Common Data Format" (CDF) for ballots as certified election hardware.
+* **Voter Behavior Simulation:** We use the **EAVS (Election Administration and Voting Survey)**.
+    * **Data Source:** [EAC - EAVS Research & Data](https://www.eac.gov/research-and-data/studies-and-reports)
+    * **Application:** We pull "Ballot Rejection" data to model how voters handle complex instructions, allowing the UI to offer "Error Prevention" tooltips.
+* **Tabulation Templates:** We mirror the legal frameworks of **Maine and NYC**.
+    * **Data Source:** [Maine RCV Rules](https://www.maine.gov/sos/cec/elec/upcoming/rcv.html) & [NYC Board of Elections](https://www.vote.nyc/page/ranked-choice-voting)
+    * **Application:** The backend "Tally Engine" runs the exact recursive elimination algorithm used in these jurisdictions to ensure mathematical accuracy.
+
+---
+
+## 3. Supreme Court Check Page
+**Target Interface:** [`SupremeCourtCheckDesktopPage.png`](../../../docs/Founding/ScreenSequenceIMG/SupremeCourtCheckDesktopPage.png)
+**Objective:** Ground the 26-state override concept in established Constitutional frameworks.
+
+### Methodology & Data Depth
+* **The "Exceptions Clause":** We ground the override in **Article III, Section 2** of the Constitution via the **Constitution Annotated (CONAN)**.
+    * **Data Source:** [Constitution Annotated - Article III](https://constitution.congress.gov/constitution/article-3/)
+    * **Application:** It illustrates that Congress (and by extension, the States) has the power to define the "Exceptions" to the Court's appellate jurisdiction.
+* **Procedural Baseline:** Using **U.S. Courts** data, we establish the current "Rule of Four."
+    * **Data Source:** [U.S. Courts - Supreme Court Procedures](https://www.uscourts.gov/about-federal-courts/educational-resources/)
+    * **Application:** The simulation posits a "Rule of 26" as a direct evolutionary successor to this procedural norm.
+* **Structural Flexibility:** The **Federal Judicial Center (FJC)** provides historical data on the creation of "Article I" (Legislative) courts.
+    * **Data Source:** [FJC - History of the Federal Judiciary](https://www.fjc.gov/history)
+    * **Application:** This proves that the structure of the judiciary is a legislative construct that can be modified to include a state-override check.
+* **Philosophical Weight:** We pull from **The Federalist Papers (No. 78 and No. 81)**.
+    * **Data Source:** [GovInfo - The Federalist Papers](https://www.govinfo.gov/collection/federalist-papers)
+
+
+
+---
+
+## 4. Minimum Amount of Space Page
+**Target Interface:** [`MinimumAmountOfSpaceDesktop.png`](../../../docs/Founding/ScreenSequenceIMG/MinimumAmountOfSpaceDesktop.png)  
+**Objective:** Calculate and visualize spatial allocation using the mathematical formula.
+
+### Methodology & Data Depth
+* **The Spatial Formula:** $Sovereign\ Area = (Height \times 3)^2$
+    * **Logic:** This calculates a "physiological buffer zone." For an average height of 1.75m, the formula requires a ~27.5 square meter footprint per person.
+* **The Land-Subtraction Algorithm:** We start with the **BLM Public Land Statistics**.
+    * **Data Source:** [BLM - Public Land Statistics 2024](https://www.blm.gov/about/data/public-land-statistics)
+    * **Logic:** The total acreage (245M acres) is the "gross" value. We then use **USDA MULU** reports to subtract "non-habitable" land.
+    * **Data Source:** [USDA ERS - Major Land Uses (MULU)](https://www.ers.usda.gov/topics/farm-economy/land-use-land-value-tenure/major-land-uses)
+* **GIS Visualization:** The final layer uses **USGS GIS data**.
+    * **Data Source:** [USGS - National Land Cover Database (NLCD)](https://www.usgs.gov/centers/eros/science/national-land-cover-database) & [PAD-US (Protected Areas Database)](https://www.usgs.gov/programs/gap-analysis-project/science/protected-areas-database-us-pad-us)
+    * **Application:** Using D3.js, the UI renders a hexagonal grid over habitable land in Wyoming, excluding USGS-tagged "Protected Areas" (National Parks) and "Water Bodies."
