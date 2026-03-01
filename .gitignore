@@ -3,6 +3,10 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Generateed visulization files 
+
+SSDFlask/static/visualizations/
+
 # C extensions
 *.so
 
