@@ -1,0 +1,21 @@
+Year,Candidate,Method,Votes
+1824,Andrew Jackson,"1824 Election, Actual Results",151271
+1824,Andrew Jackson,"1824 Election, Simulated Results with Approval Voting",160000
+1824,John Quincy Adams,"1824 Election, Actual Results",113122
+1824,John Quincy Adams,"1824 Election, Simulated Results with Approval Voting",175000
+1824,William H. Crawford,"1824 Election, Actual Results",40856
+1824,William H. Crawford,"1824 Election, Simulated Results with Approval Voting",60000
+1824,Henry Clay,"1824 Election, Actual Results",47531
+1824,Henry Clay,"1824 Election, Simulated Results with Approval Voting",65000
+1992,Bill Clinton,"1992 Election, Actual Results",44909889
+1992,Bill Clinton,"1992 Election, Simulated Results with Approval Voting",48000000
+1992,George H. W. Bush,"1992 Election, Actual Results",39104550
+1992,George H. W. Bush,"1992 Election, Simulated Results with Approval Voting",50500000
+1992,Ross Perot,"1992 Election, Actual Results",19743821
+1992,Ross Perot,"1992 Election, Simulated Results with Approval Voting",21000000
+2000,George W. Bush,"2000 Election, Actual Results",50456002
+2000,George W. Bush,"2000 Election, Simulated Results with Approval Voting",52000000
+2000,Al Gore,"2000 Election, Actual Results",50999897
+2000,Al Gore,"2000 Election, Simulated Results with Approval Voting",54500000
+2000,Ralph Nader,"2000 Election, Actual Results",2882955
+2000,Ralph Nader,"2000 Election, Simulated Results with Approval Voting",3200000
