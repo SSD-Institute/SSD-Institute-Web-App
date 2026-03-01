@@ -1,5 +1,5 @@
 <article>
-    <h1>Multi-choice Voting</h1>
+    <h1>Multi-Choice Voting</h1>
     <p>
         <strong>Definition:</strong> Multi-choice voting permits citizens to cast votes for every candidate they support rather than being limited to a single selection. 
         This approach eliminates the "spoiler effect" and reduces the need for strategic voting by allowing a broader expression of voter preference. 
@@ -32,13 +32,24 @@
         More accurate representation of voter preferences can lead to better policy outcomes. 
         When elected officials know they need to appeal to a broader base, they may be more likely to adopt policies that reflect the interests of a wider range of constituents.
     </p>
-    <h2>Visualization & Implementation Plan</h2>
-    <p>
-        <strong>Static Example: </strong> A static bar chart provides a clear snapshot of how multi-choice voting works in practice. 
-        Unlike traditional charts where the percentages must add up to 100%, this chart displays the total "approval" each candidate received. 
-        It presents the total number of votes each candidate garnered, along with a clear explanation of why one candidate emerged as the winner. 
-        For instance, you might see one candidate with 60% support and another with 55%, making it easy to identify the most broadly accepted choice within the community.
-    </p>
+    <h2>Examples of US Presidential Election Outcomes Under Multiple-Choice Voting</h2>
+    <p>Below, you can take a look at a few US Presidential Elections, comparing how they turned out with how they might have turned out with MCV.</p>
+    <div class="mcv_interactive_visualization_div">
+        <div class="visualization_selector_buttons_div">
+            {% for visualization_path in visualization_paths %}
+            <button name="visualization_selection_button" data-vizsrc="{{ visualization_path }}">
+                {{ visualization_path.replace("-", " ").split(".")[0].title() }}
+            </button>
+            {% endfor %}
+        </div>
+        <iframe
+        id="ApprovalVotingVisualization"
+        src="static/visualizations/mcv/2000-united-states-presidential-election.html"
+        width="800"
+        height="500"
+        ></iframe>
+    </div>
+    <h2>Future Visualization Plan</h2>
     <p>
         <strong>Future Simulation: </strong> An interactive tool that lets users allocate their votes and see how the results shift. 
         You could toggle your support for multiple candidates and watch the bars update instantly. 

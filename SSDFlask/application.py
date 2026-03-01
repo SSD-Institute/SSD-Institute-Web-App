@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask
 from flask import render_template
 
@@ -36,7 +38,11 @@ def multiple_choice_voting():
         'base.html',
         title = 'Multiple Choice Voting',
         stylesheet="multiple_choice_voting.css",
-        page_content = render_template('multiple-choice-voting.html')
+        scripts = ["/static/scripts/ApprovalVotingSwitcher.js"],
+        page_content = render_template(
+            'multiple-choice-voting.html',
+            visualization_paths = os.listdir("./static/visualizations/mcv")
+        )
     )
 
 

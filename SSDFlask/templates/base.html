@@ -4,6 +4,9 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/static/styles/styles.css"/>
     <link rel="stylesheet" href="/static/styles/{{ stylesheet }}"/>
+    {% for script in scripts %}
+    <script src="{{script}}" defer></script>
+    {% endfor %}
 </head>
 <body>
     <header>
@@ -69,7 +72,7 @@
                             href="mailto:contact@ssdinstitute.net"
                         >
                             <img src="static/assets/envelope.svg" alt="Contact us via Email"/>
-                            contact@scientificselfdetermination.com
+                            contact@ssdinstitute.net
                         </a>
                     </div>
                 </div>

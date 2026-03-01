@@ -171,13 +171,19 @@ article {
 .footer_social_icon_link {
     display: block;
     aspect-ratio: 1/1;
+    border: 1px solid dimgray;
+    border-radius: 100%;
+    padding: 12px;
+    transition: background-color 0.1s linear;
+}
+
+.footer_social_icon_link:hover {
+    background-color: lightblue;
 }
 
 .footer_social_icon_link img {
     width: 32px;
-    border: 1px solid dimgray;
-    border-radius: 100%;
-    padding: 8px;
+    display: block;
 }
 
 .footer_right_div {
@@ -205,6 +211,7 @@ article {
 .footer_mobile {
     display: none;
     border-top: 2px solid lightgray;
+    padding: 16px;
 }
 
 @media (max-width: 750px) {

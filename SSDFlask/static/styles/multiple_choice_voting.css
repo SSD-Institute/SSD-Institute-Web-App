@@ -1,0 +1,27 @@
+.mcv_interactive_visualization_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.visualization_selector_buttons_div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.visualization_selector_buttons_div button {
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    background-color: lightgray;
+    padding: 16px;
+}
+
+.visualization_selector_buttons_div button:hover {
+    background-color: gray;
+}
