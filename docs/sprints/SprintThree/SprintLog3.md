@@ -70,7 +70,7 @@ No dependency conflicts, merge conflicts, or environment failures.
 
 ## 3. System Test Report
 
-All tests executed prior to merge into `develop`.
+All tests executed prior to merge into `main`
 
 | Test Case                                                           | Type        | Result | Environment                           | Evidence  |
 | ------------------------------------------------------------------- | ----------- | ------ | ------------------------------------- | --------- |
@@ -154,6 +154,8 @@ PR #143 consolidated multiple issues. While efficient, smaller PRs may improve r
 1. Expand automated test coverage (Owner: @stukru42)
 2. Improve UI typography scaling and accessibility (Owner: @arpringle)
 3. Add additional historical voting case examples (Owner: @Thommond)
+4. Update CI/CL or Python Anywhere to run mcv_viz.py file (Owner: @Thommond)
+5. Set up pytest on the actual Github Repo README.md status (Owner: @Thommond)
 
 Assigned in GitHub Project Board.
 
