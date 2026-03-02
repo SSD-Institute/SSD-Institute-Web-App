@@ -42,7 +42,10 @@ def multiple_choice_voting():
         scripts=["/static/scripts/ApprovalVotingSwitcher.js"],
         page_content=render_template(
             'multiple-choice-voting.html',
-            visualization_paths=os.listdir(mcv_path)
+            visualization_paths=sorted(
+            f for f in os.listdir(mcv_path)
+            if f.endswith(".html")
+            )
         )
     )
 
