@@ -19,20 +19,18 @@
             </div>
             <div class="header_right_div">
                 <div class="header_buttons_div">
-                    <!--
-                        TODO: The ".selected" CSS class will make the navigation button colored to
-                        indicate what page you are on, but we currently don't have a mechanism to
-                        conditionally apply thaty style.
-                    -->
-                    <a class="header_tab_link selected" href="collaborative-veto">
+                     <a class="header_tab_link {% if title == 'Collaborative Veto' %}selected{% endif %}" 
+                        href="/collaborative-veto">
                         Collaborative Veto
-                    </a>
-                    <a class="header_tab_link" href="supreme-court-check">
+                     </a>
+                     <a class="header_tab_link {% if title == 'Supreme Court Check' %}selected{% endif %}" 
+                        href="/supreme-court-check">
                         Supreme Court Check
-                    </a>
-                    <a class="header_tab_link" href="multiple-choice-voting">
+                     </a>
+                     <a class="header_tab_link {% if title == 'Multiple Choice Voting' %}selected{% endif %}" 
+                        href="/multiple-choice-voting">
                         Multiple Choice Voting
-                    </a>
+                     </a>       
                 </div>
                 <div class="header_site_title_div">
                     <h1>Scientific Self-Determination</h1>
