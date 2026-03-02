@@ -34,17 +34,17 @@ def supreme_court_check():
 
 @app.route("/multiple-choice-voting")
 def multiple_choice_voting():
+    mcv_path = os.path.join(app.root_path, "static", "visualizations", "mcv")
     return render_template(
         'base.html',
-        title = 'Multiple Choice Voting',
+        title='Multiple Choice Voting',
         stylesheet="multiple_choice_voting.css",
-        scripts = ["/static/scripts/ApprovalVotingSwitcher.js"],
-        page_content = render_template(
+        scripts=["/static/scripts/ApprovalVotingSwitcher.js"],
+        page_content=render_template(
             'multiple-choice-voting.html',
-            visualization_paths = os.listdir("./static/visualizations/mcv")
+            visualization_paths=os.listdir(mcv_path)
         )
     )
-
 
 @app.route("/minimum-space")
 def minimum_space():
