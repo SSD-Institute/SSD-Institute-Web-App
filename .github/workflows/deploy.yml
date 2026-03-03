@@ -16,13 +16,21 @@ jobs:
     - name: Update code on PythonAnywhere
       run: |
         curl -s -X POST \
-        "https://www.pythonanywhere.com/api/v0/user/${{ secrets.PA_USERNAME }}/consoles/${{secrets.PA_CONSOLE_NUMBER}}/send_input/" \
-        -H "Authorization: Token ${{ secrets.PA_API_SECRET }}" \
-        -d '{"input": "git pull origin main \n"}' \
-        -H "Content-Type: application/json"
+          "https://www.pythonanywhere.com/api/v0/user/${{ secrets.PA_USERNAME }}/consoles/${{ secrets.PA_CONSOLE_NUMBER }}/send_input/" \
+          -H "Authorization: Token ${{ secrets.PA_API_SECRET }}" \
+          -H "Content-Type: application/json" \
+          -d '{"input": "git pull origin main \n"}'
+
+    - name: Run MCV visualization generation on PythonAnywhere
+      run: |
+        curl -s -X POST \
+          "https://www.pythonanywhere.com/api/v0/user/${{ secrets.PA_USERNAME }}/consoles/${{ secrets.PA_CONSOLE_NUMBER }}/send_input/" \
+          -H "Authorization: Token ${{ secrets.PA_API_SECRET }}" \
+          -H "Content-Type: application/json" \
+          -d '{"input": "python /home/'"${{ secrets.PA_USERNAME }}"'/SSDFlask/mcv_viz_prod.py \n"}'
 
     - name: Reload PythonAnywhere Web App
       run: |
         curl -s -X POST \
-        "https://www.pythonanywhere.com/api/v0/user/${{ secrets.PA_USERNAME }}/webapps/${{ secrets.PA_USERNAME }}.pythonanywhere.com/reload/" \
-        -H "Authorization: Token ${{ secrets.PA_API_SECRET }}"
+          "https://www.pythonanywhere.com/api/v0/user/${{ secrets.PA_USERNAME }}/webapps/${{ secrets.PA_USERNAME }}.pythonanywhere.com/reload/" \
+          -H "Authorization: Token ${{ secrets.PA_API_SECRET }}"
