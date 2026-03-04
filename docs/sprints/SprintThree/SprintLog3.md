@@ -58,7 +58,7 @@ No tasks carried over.
 
 ### Incomplete Tasks
 
-None.
+ There is a broken link in the explaination data that will need addressed.
 
 ### Blockers
 
@@ -85,8 +85,8 @@ All tests executed prior to merge into `main`
 
 Manual tests explicitly executed in:
 
-* Chrome 121
-* Firefox 122
+* Chrome 
+* Firefox
 * Windows 10 environment
 
 Peer review comments addressed prior to merge.
@@ -95,9 +95,13 @@ Peer review comments addressed prior to merge.
 
 ## 4. Bug Tracking
 
-| Severity | Description                      | Status | Fix PR |
-| -------- | -------------------------------- | ------ | ------ |
-| N/A      | No high-severity bugs discovered | N/A    | N/A    |
+| Severity | Description                                              | Status | Fix PR |
+| -------- | -------------------------------------------------------- | ------ | ------ |
+| 1        | mcv_viz.py did not generate the .html viz or the buttons | N/A    | N/A    |
+
+Addressed the issue first in the PythonAnywhere server then updated it into the actual Github.
+
+Issue was app.root_path should have been used and viz loops not native handlers. 
 
 No regressions introduced.
 No UI crashes observed.
