@@ -103,8 +103,6 @@ Addressed the issue first in the PythonAnywhere server then updated it into the 
 
 Issue was app.root_path should have been used and viz loops not native handlers. 
 
-There was 
-
 No regressions introduced.
 No UI crashes observed.
 No performance degradation.
