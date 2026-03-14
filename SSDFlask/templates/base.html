@@ -50,6 +50,7 @@
     </main>
     <footer>
         <div class="footer_div">
+            <p>Page last updated: <span id="last-updated">Loading...</span></p>
             <div class="footer_desktop">
                 <div class="footer_desktop_main_div">
                     <div class="footer_left_div">
@@ -106,3 +107,24 @@
     </footer>
 </body>
 </html>
+<script>
+  // This value changes depending on which child template is loaded
+  const filePath = "{% block github_file_path %}{% endblock %}";
+  const user = "Thommond";
+  const repo = "SSD-Institute-Web-App";
+
+  async function getRepoDate() {
+    // If filePath is empty, it fetches the last repo-wide commit
+    let url = `https://api.github.com{user}/${repo}/commits?per_page=1`;
+    if (filePath) url += `&path=${filePath}`;
+
+    const response = await fetch(url);
+    const data = await response.json();
+    
+    if (data.length > 0) {
+      const date = new Date(data[0].commit.committer.date);
+      document.getElementById('last-updated').innerText = date.toLocaleDateString();
+    }
+  }
+  getRepoDate();
+</script>
