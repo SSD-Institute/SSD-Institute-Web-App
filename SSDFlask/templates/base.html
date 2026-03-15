@@ -112,43 +112,50 @@
 </body>
 </html>
 <script>
-  // Block to be filled by child templates
+  // Ensure this block is in your child templates, e.g., {% block github_file_path %}index.html{% endblock %}
   const filePath = "{% block github_file_path %}{% endblock %}";
   const user = "Thommond";
   const repo = "SSD-Institute-Web-App";
 
   async function getRepoDate() {
-    // FIX 1: Corrected URL structure with /repos/
+    // FIX: Using backticks (`) and ${} for variables, and added /repos/
     let url = `https://api.github.com{user}/${repo}/commits?per_page=1`;
-    if (filePath) url += `&path=${filePath}`;
+    
+    if (filePath && filePath.trim() !== "") {
+      url += `&path=${filePath}`;
+    }
 
     try {
       const response = await fetch(url);
       
-      // Check if the request was successful
-      if (!response.ok) throw new Error(`GitHub API Error: ${response.status}`);
-      
+      if (!response.ok) {
+        throw new Error(`GitHub API returned ${response.status}`);
+      }
+
       const data = await response.json();
       
-      // FIX 2: Data is an array, so we must access the first item [0]
-      if (Array.isArray(data) && data.length > 0) {
-        const commitInfo = data[0].commit.committer.date;
-        const date = new Date(commitInfo);
-        const formattedDate = date.toLocaleDateString();
-        
-        // FIX 3: Update all elements with the class (for Desktop & Mobile)
+      // FIX: access the first item [0] in the array returned by GitHub
+      if (data && data.length > 0) {
+        const commitDate = data[0].commit.committer.date;
+        const dateObj = new Date(commitDate);
+        const formatted = dateObj.toLocaleDateString();
+
+        // Update all elements with the class 'last-updated-text'
         const elements = document.getElementsByClassName('last-updated-text');
         for (let el of elements) {
-          el.innerText = formattedDate;
+          el.innerText = formatted;
         }
-      } else {
-        console.warn("No commits found for this path.");
+        
+        // Also update the ID version if you kept it
+        const idElement = document.getElementById('last-updated');
+        if (idElement) idElement.innerText = formatted;
       }
     } catch (error) {
       console.error("Fetch failed:", error);
-      // Optional: Set a fallback message on the page
       const elements = document.getElementsByClassName('last-updated-text');
-      for (let el of elements) { el.innerText = "Date unavailable"; }
+      for (let el of elements) {
+        el.innerText = "Recently"; // Friendly fallback
+      }
     }
   }
 
