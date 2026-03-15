@@ -93,6 +93,11 @@ article {
     font-size: 24px;
 }
 
+.page-updated {
+    text-align: center;
+    margin: 5px;
+}
+
 
 @media (max-width: 850px) {
   .header_buttons_div {
