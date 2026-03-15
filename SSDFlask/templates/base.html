@@ -129,7 +129,7 @@
     
     if (data.length > 0) {
       const date = new Date(data[0].commit.committer.date);
-      document.getElementById('last-updated').innerText = date.toLocaleDateString();
+      document.getElementsByClassName('last-updated-text').innerText = date.toLocaleDateString();
     }
   }
   getRepoDate();
