@@ -1,13 +1,27 @@
+import os
 import plotly.express as px
 import pandas as pd
-
 from data.sample import ApprovalVotingData
+
+# Resolve project root based on this file's location
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+# Build absolute path to static visualization directory
+OUTPUT_DIR = os.path.join(
+    PROJECT_ROOT,
+    "..", # Traverse out of the `visualization_scripts`` subdirectory
+    "static",
+    "visualizations",
+    "mcv"
+)
+
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 for election_title, election in ApprovalVotingData.elections.items():
 
-    voting_methods = list()
-    candidates = list()
-    vote_totals = list()
+    voting_methods = []
+    candidates = []
+    vote_totals = []
 
     for voting_method, results in election.items():
         for candidate, vote_total in results.items():
@@ -17,9 +31,7 @@ for election_title, election in ApprovalVotingData.elections.items():
 
     df = pd.DataFrame({
         "Voting Method": voting_methods,
-
         "Candidate": candidates,
-
         "Vote Totals": vote_totals
     })
 
@@ -32,4 +44,7 @@ for election_title, election in ApprovalVotingData.elections.items():
         title=election_title
     )
 
-    fig.write_html("/static/visualizations/mcv/" + election_title.lower().replace(" ", "-") + ".html")
+    filename = election_title.lower().replace(" ", "-") + ".html"
+    output_path = os.path.join(OUTPUT_DIR, filename)
+
+    fig.write_html(output_path)

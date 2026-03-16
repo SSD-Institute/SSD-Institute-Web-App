@@ -25,11 +25,19 @@ def collaborative_veto():
 
 @app.route("/supreme-court-check")
 def supreme_court_check():
+    scv_path = os.path.join(app.root_path, "static", "visualizations", "scv")
     return render_template(
         'base.html',
         title = 'Supreme Court Check',
         stylesheet="supreme_court_check.css",
-        page_content = render_template('supreme-court-check.html')
+        scripts=["/static/scripts/SupremeCourtVetoSwitcher.js"],
+        page_content=render_template(
+            'supreme-court-check.html',
+            visualization_paths=sorted(
+                f for f in os.listdir(scv_path)
+                    if f.endswith(".html")
+            )
+        )
     )
 
 @app.route("/multiple-choice-voting")
@@ -43,8 +51,8 @@ def multiple_choice_voting():
         page_content=render_template(
             'multiple-choice-voting.html',
             visualization_paths=sorted(
-            f for f in os.listdir(mcv_path)
-            if f.endswith(".html")
+                f for f in os.listdir(mcv_path)
+                    if f.endswith(".html")
             )
         )
     )
