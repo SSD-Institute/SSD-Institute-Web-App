@@ -47,9 +47,14 @@
             change to prevent injection of HTML. In that case it can't use `| safe`
         -->
         {{ page_content | safe }}
+
     </main>
     <footer>
         <div class="footer_div">
+            <div id="page-updated">
+                 <p>Page last updated: <span class="last-updated-text">Loading...</span></p>
+            </div>
+           
             <div class="footer_desktop">
                 <div class="footer_desktop_main_div">
                     <div class="footer_left_div">
@@ -62,6 +67,9 @@
                         </a>
                         <a class="footer_social_icon_link" href="https://linkedin.com">
                             <img src="static/assets/linkedin.svg" alt="Follow us on LinkedIn" />
+                        </a>
+                        <a class="footer_social_icon_link" href="https://github.com/SSD-Institute/SSD-Institute-Web-App/tree/main"> 
+                            <img src="static/assets/GithubImage.png" alt="Visit us on GitHub"/>
                         </a>
                     </div>
                     <div class="footer_right_div">
@@ -89,6 +97,9 @@
                     <a class="footer_social_icon_link" href="https://linkedin.com">
                         <img src="static/assets/linkedin.svg" alt="Follow us on LinkedIn"/>
                     </a>
+                    <a class="footer_social_icon_link" href="https://github.com/SSD-Institute/SSD-Institute-Web-App/tree/main"> 
+                        <img src="static/assets/GithubImage.png" alt="Visit us on GitHub"/>
+                    </a>
                 </div>
                 <p>
                     Contact us via email:
@@ -100,3 +111,60 @@
     </footer>
 </body>
 </html>
+{% block github_file_path %}
+{% set github_file_path = "" %}
+{% endblock %}
+
+<script>
+const user = "SSD-Institute";
+const repo = "SSD-Institute-Web-App";
+const filePath = "{{ github_file_path }}";
+
+async function getRepoDate() {
+
+  let url = "https://api.github.com/repos/" + user + "/" + repo + "/commits?per_page=1";
+
+  if (filePath && filePath.trim() !== "") {
+    url += "&path=" + encodeURIComponent(filePath);
+  }
+
+  try {
+
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error("GitHub API error");
+    }
+
+    const data = await response.json();
+
+    if (data && data.length > 0) {
+
+      const commitDate = data[0].commit.committer.date;
+      const dateObj = new Date(commitDate);
+      const formatted = dateObj.toLocaleDateString();
+
+      const elements = document.getElementsByClassName("last-updated-text");
+
+      for (let el of elements) {
+        el.innerText = formatted;
+      }
+
+    }
+
+  } catch (error) {
+
+    console.error("Fetch failed:", error);
+
+    const elements = document.getElementsByClassName("last-updated-text");
+
+    for (let el of elements) {
+      el.innerText = "Recently";
+    }
+
+  }
+
+}
+
+getRepoDate();
+</script>
