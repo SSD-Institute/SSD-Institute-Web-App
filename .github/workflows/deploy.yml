@@ -27,7 +27,15 @@ jobs:
           "https://www.pythonanywhere.com/api/v0/user/${{ secrets.PA_USERNAME }}/consoles/${{ secrets.PA_CONSOLE_NUMBER }}/send_input/" \
           -H "Authorization: Token ${{ secrets.PA_API_SECRET }}" \
           -H "Content-Type: application/json" \
-          -d '{"input": "python /home/'"${{ secrets.PA_USERNAME }}"'/visualization_scripts/mcv_viz.py \n"}'
+          -d '{"input": "python /home/'"${{ secrets.PA_USERNAME }}"'/SSDFlask/visualization_scripts/mcv_viz.py \n"}'
+
+    - name: Run SCV visualization generation on PythonAnywhere
+      run: |
+        curl -s -X POST \
+          "https://www.pythonanywhere.com/api/v0/user/${{ secrets.PA_USERNAME }}/consoles/${{ secrets.PA_CONSOLE_NUMBER }}/send_input/" \
+          -H "Authorization: Token ${{ secrets.PA_API_SECRET }}" \
+          -H "Content-Type: application/json" \
+          -d '{"input": "python /home/'"${{ secrets.PA_USERNAME }}"'/SSDFlask/visualization_scripts/scv_viz.py \n"}'
 
     - name: Reload PythonAnywhere Web App
       run: |
