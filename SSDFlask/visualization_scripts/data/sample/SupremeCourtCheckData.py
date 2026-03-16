@@ -92,14 +92,14 @@ SupremeCourtCheckData = {
     # States with mixed political environments or frontier
     # populations that might not have taken a unified stance.
 
-     "Mixed / Independent Policy": [],
+    "Mixed / Independent Policy": [],
 
     # Not states as of this case.
     "Not a State Yet": [
-            "FL","TX","IA","WI","CA","MN","OR",
-            "KS","WV","NV","NE","CO","ND","SD","MT","WA","ID","UT","AZ","NM","OK",
-            "AK","HI"
-        ]
+        "FL","TX","IA","WI","CA","MN","OR", "WY",
+        "KS","WV","NV","NE","CO","ND","SD","MT","WA","ID","UT","AZ","NM","OK",
+        "AK","HI"
+    ]
 },
 
 # ============================================================
@@ -216,7 +216,7 @@ SupremeCourtCheckData = {
 
 # ============================================================
 # CASE 4
-# DOBBS v JACKSON WOMENS HEALTH ORGANIZATION (2022)
+# DOBBS v JACKSON WOMEN'S HEALTH ORGANIZATION (2022)
 # ============================================================
 
 # WHY THIS CASE

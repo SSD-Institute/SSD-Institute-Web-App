@@ -26,10 +26,22 @@
     <p>
         This model encourages state governments to be more responsive to their constituents, as they would have a direct role in shaping the legal landscape of their state in response to federal judicial decisions.
     </p>
-    <h2>Visualization & Implementation Plan</h2>
-    <p>
-        <strong>Static Example: </strong> A static map of the United States showing which states accepted or rejected a hypothetical Supreme Court ruling.
-    </p>
+    <h2>Examples of How States May Have Reacted to Supreme Court Decisions Under the Supreme Court Veto</h2>
+        <div class="scv_interactive_visualization_div">
+            <div class="visualization_selector_buttons_div">
+                {% for visualization_path in visualization_paths %}
+                <button name="visualization_selection_button" data-vizsrc="{{ visualization_path }}">
+                    {{ visualization_path.replace("-", " ").split(".")[0].title() }}
+                </button>
+                {% endfor %}
+            </div>
+            <iframe
+            id="SupremeCourtVetoVisualization"
+            src="static/visualizations/scv/prigg-v-pennsylvania-(1842).html"
+            width="800"
+            height="500"
+            ></iframe>
+        </div>
     <p>
         <strong>Future Simulation: </strong> An interactive map showing the real-time status of a Supreme Court ruling as states vote to accept or reject it.
         (once 26 states object, a "Veto Achieved" indicator appears)
