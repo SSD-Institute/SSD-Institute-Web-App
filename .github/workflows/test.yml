@@ -20,7 +20,6 @@ jobs:
 
       - name: Run Headless Tests
         env:
-          PYTHONPATH: ${{ github.workspace }}/ssdFlask
+          PYTHONPATH: ${{ github.workspace }}/SSDFlask
         run: |
-          # We point pytest to the subfolder where the tests actually live
           pytest ssdFlask/visualization_scripts/tests/ --headless
