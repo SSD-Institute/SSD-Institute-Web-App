@@ -20,7 +20,7 @@ jobs:
 
       - name: Run Headless Tests
         env:
-          PYTHONPATH: ${{ github.workspace }}
+          PYTHONPATH: ${{ github.workspace }}/ssdFlask
         run: |
-          # We use --headless to ensure it doesn't try to open a physical window
-          pytest visualization_scripts/tests/ --headless
+          # We point pytest to the subfolder where the tests actually live
+          pytest ssdFlask/visualization_scripts/tests/ --headless
