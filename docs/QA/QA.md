@@ -4,7 +4,7 @@ During the QA portion of the presentation, Justin and Thom addressed several bug
 
    ## 1. Navigation Indicator
 **Issue:**  
-When slecting a new page, the navigation indicator (the purple highlight in the header) was not updating correctly to show the active section.
+When selecting a new page, the navigation indicator (the purple highlight in the header) was not updating correctly to show the active section.
 
 [Navigation Indicator Issue](IMG/NavigationIndicatorIssue.PNG)
 
@@ -65,7 +65,7 @@ Updated the code to display the page’s last‑updated timestamp above the foot
 
 **Issue:**
 
-the README file was missing the Feature Updates from previous sprints and needed a clear definition of the project’s intended purpose.
+The README file was missing the Feature Updates from previous sprints and needed a clear definition of the project’s intended purpose.
 
 **Fix:**
 
@@ -73,7 +73,7 @@ We updated the README file to include the website’s mission and the new featur
 
 ## 3. Testing
 
-The following screenshots show the testing of the Supreme Court Check mapping to verify that all components are functioning correctly. During testing, I did not encounter any issues every indicator and toggle operated as expected.
+The following screenshots show the testing of the Supreme Court Check mapping to verify that all components are functioning correctly. During testing, I did not encounter any issues. Every indicator and toggle operated as expected.
 
    - [Brown V Board of Education All Toggled](IMG/ButtonBrownVBoardOfEducationAll.PNG)
    - [Brown V Board of Education Override Only](IMG/ButtonBrownVBoardOfEducationOverride.PNG)
