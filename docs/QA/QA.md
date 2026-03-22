@@ -1,0 +1,85 @@
+# QA Session: Issues and Fixes Sprint 3
+
+During the QA portion of the presentation, Justin and Thom addressed several bugs and refinements that surfaced during the sprint.
+
+   ## 1. Navigation Indicator
+**Issue:**  
+When selecting a new page, the navigation indicator (the purple highlight in the header) was not updating correctly to show the active section.
+
+[Navigation Indicator Issue](IMG/NavigationIndicatorIssue.PNG)
+
+**Fix:**  
+The team identified the issue in base.html the header template. Although the fix was implemented, were waiting for the server to fully update and deploy the corrected version.
+
+[Navigation Indicator Fix](IMG/NavigationIndicatorFix.PNG)
+
+---
+
+## 2. Button Mapping on Election Charts
+
+**Issue:**  
+On the *Multi-Choice Voting* page, the buttons used to switch between historical election years were not functioning. The view remained stuck on the year 2000 results.
+
+**Fix:**  
+Thom updated the server‑side files to ensure the new changes were reflected, allowing the buttons and maps to function properly.
+
+[Button Mapping on Election Charts](IMG/ButtonMappingonElectionChartsFix.PNG)
+
+---
+
+## 3. Data Redundancy and Source Documentation
+
+**Issue:**  
+The sample data file (`ApprovalVotingData.py`) contained redundant information.
+
+**Fix:**  
+Austin cleaned and reorganized the raw data, removing duplicates and ensuring that all historical election results (1824, 1992, and 2000) were formatted as a nested dictionary structure for easier modular access by the web application.
+
+---
+
+## 4. Broken Link
+
+**Issue:**  
+A broken link was discovered in the documentation/explanation section of the site.
+
+**Fix:**  
+This was logged as an **Incomplete Task**. The team chose to defer the fix to Sprint 4 to prioritize stability of the core visualization features for the current release.
+
+---
+
+# QA Session: Issues and Fixes Sprint 4
+
+## 1. Last Update Date
+
+**Issue:**
+
+One issue we identified in the last sprint was that the table’s ‘last updated’ information wasn’t displaying correctly on the site.
+
+**Fix:**
+
+Updated the code to display the page’s last‑updated timestamp above the footer for end users.
+
+[Last Update Fix](IMG/LastUpdateFix.PNG)
+
+## 2. ReadMe File
+
+**Issue:**
+
+The README file was missing the Feature Updates from previous sprints and needed a clear definition of the project’s intended purpose.
+
+**Fix:**
+
+We updated the README file to include the website’s mission and the new features introduced in each sprint.
+
+## 3. Testing
+
+The following screenshots show the testing of the Supreme Court Check mapping to verify that all components are functioning correctly. During testing, I did not encounter any issues. Every indicator and toggle operated as expected.
+
+   - [Brown V Board of Education All Toggled](IMG/ButtonBrownVBoardOfEducationAll.PNG)
+   - [Brown V Board of Education Override Only](IMG/ButtonBrownVBoardOfEducationOverride.PNG)
+   - [Dobbs V Jackson All Toggled](IMG/ButtonDobbsVJacksonAll.PNG)
+   - [Dobbs V Jackson Override Only](IMG/ButtonDobbsVJacksonOverride.PNG)
+   - [Prigg V Pennsylvania All Toggled](IMG/ButtonPriggVPennsylvaniaAll.PNG)
+   - [Prigg V Pennsylvania Override Only](IMG/ButtonPriggVPennsylvaniaOverride.PNG)
+   - [Shelby V Holder All Toggled](IMG/ButtonShelbyVHolderAll.PNG)
+   - [Shelby V Holder Override Only](IMG/ButtonShelbyVHolderOverride.PNG)
