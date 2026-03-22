@@ -22,4 +22,4 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}/SSDFlask
         run: |
-          pytest ssdFlask/visualization_scripts/tests/ --headless
+          pytest SSDFlask/visualization_scripts/tests/ --headless
