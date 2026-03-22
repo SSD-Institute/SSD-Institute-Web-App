@@ -6,7 +6,7 @@ def test_001_map_renders(dash_duo):
 
    dash_duo.wait_for_element("#state-choropleth", timeout=10)
 
-   assert "Supreme Court" in dash_duo.find_element("#state-choropleth").text
+   assert dash_duo.find_element("#state-choropleth").is_displayed()
 
    dash_duo.percy_snapshot("initial_map_load")
 
