@@ -92,7 +92,7 @@ Branching Strategy:
  * [Sprint 1](docs/sprints/SprintOne/SprintLogOne.md)
  * [Sprint 2](docs/sprints/SprintTwo/SprintLogTwo.md)
  * [Sprint 3](docs/sprints/SprintThree/SprintLog3.md)
- * [Sprint 4](docs/sprints/SprintFour/)
+ * [Sprint 4](docs/sprints/SprintFour/SprintLog4.md)
  * [Sprint 5](docs/sprints/SprintFive/)
  * [Sprint 6](docs/sprints/SprintSix/)
  * [Sprint 7](docs/sprints/SprintSeven/)
