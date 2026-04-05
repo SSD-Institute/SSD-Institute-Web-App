@@ -16,11 +16,19 @@ def home():
 
 @app.route("/collaborative-veto")
 def collaborative_veto():
+    scv_path = os.path.join(app.root_path, "static", "visualizations", "cv")
     return render_template(
         'base.html',
         title = 'Collaborative Veto',
         stylesheet="collaborative_veto.css",
-        page_content = render_template('collaborative-veto.html')
+        scripts=["/static/scripts/CollaborativeVetoSwitcher.js"],
+        page_content = render_template(
+            'collaborative-veto.html',
+            visualization_paths=sorted(
+                f for f in os.listdir(scv_path)
+                    if f.endswith(".html")
+            )
+        )
     )
 
 @app.route("/supreme-court-check")

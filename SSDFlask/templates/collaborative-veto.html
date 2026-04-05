@@ -33,10 +33,24 @@
         <li><strong>Protection of Minority Values:</strong> This approach helps prevent the "tyranny of the majority" by enabling geographic or cultural enclaves to uphold their own standards on sensitive issues—from economic zoning to public health—without imposing their views on the rest of the state.</li>
         <li><strong>Governance as an Evolutionary Process:</strong> This framework allows different jurisdictions to act as "laboratories of democracy." Instead of a single failed state policy impacting everyone, various counties can simultaneously test different approaches, facilitating data-driven policy adaptations over time.</li>
     </ul>
-
-    <!-- This is the visualization explaination viz should go above.-->
 <section>
-        <p>
+    <h2>Examples of How Counties Might Exercise the Collaborative Veto on Various Issues</h2>
+    <div class="cv_interactive_visualization_div">
+        <div class="visualization_selector_buttons_div">
+            {% for visualization_path in visualization_paths %}
+            <button name="visualization_selection_button" data-vizsrc="{{ visualization_path }}">
+                {{ visualization_path.replace("-", " ").split(".")[0].title() }}
+            </button>
+            {% endfor %}
+        </div>
+        <iframe
+        id="CollaborativeVetoVisualization"
+        src="static/visualizations/cv/wyoming-energy-regulation-veto-scenario.html"
+        width="800"
+        height="500"
+        ></iframe>
+    </div>
+    <p>
     The following simulations model a proposed “Collaborative Veto” system in which counties can collectively reject state-level legislation through a simple majority threshold. Wyoming is used as the test case due to its small number of counties (23 total), making it structurally ideal for demonstrating how a county-based veto mechanism could function in practice. Each dataset is grounded in real economic, political, and geographic characteristics of Wyoming counties, with outcomes modeled to reflect likely regional responses rather than exact historical votes.
     </p>
 
