@@ -4,6 +4,7 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/static/styles/styles.css"/>
     <link rel="stylesheet" href="/static/styles/{{ stylesheet }}"/>
+    <link rel="stylesheet" href="/static/styles/accessibility.css"/>
     {% for script in scripts %}
     <script src="{{script}}" defer></script>
     {% endfor %}
@@ -49,6 +50,36 @@
         {{ page_content | safe }}
 
     </main>
+    <div id="ax-sidebar-panel" class="ax-sidebar-panel">
+        <div class="ax-sidebar-header">
+            <h3>Accessibility Tools</h3>
+            <button onclick="toggleAxSidebar()" class="ax-close-btn" aria-label="Close Menu">&times;</button>
+        </div>
+        
+        <div class="ax-sidebar-content">
+            <div class="ax-section">
+                <p>Appearance</p>
+                <button id="contrast-btn" class="ax-option-btn" onclick="toggleContrast()">High Contrast</button>
+                <button id="dark-btn" class="ax-option-btn" onclick="toggleDarkMode()">Dark Mode</button>
+            </div>
+
+            <div class="ax-section">
+                <p>Text Size: <span id="size-value">100%</span></p>
+                <input type="range" id="font-slider" min="100" max="200" value="100" oninput="adjustFontSize(this.value)">
+            </div>
+
+            <hr>
+            
+            <button onclick="resetSettings()" class="ax-reset-btn">Reset All Settings</button>
+        </div>
+    </div>
+
+    <button class="ax-fab-trigger" onclick="toggleAxSidebar()" aria-label="Open Accessibility Menu">
+        <span style="font-size: 24px;">
+            <img src="static/assets/accessibilityOptions.png" alt="Accessibility Options"/>
+        </span>
+    </button>
+
     <footer>
         <div class="footer_div">
             <div id="page-updated">
@@ -109,6 +140,7 @@
             </div>
         </div>
     </footer>
+  <script src="/static/scripts/accessbility.js"></script>
 </body>
 </html>
 {% block github_file_path %}
