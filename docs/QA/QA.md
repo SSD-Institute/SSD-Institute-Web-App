@@ -83,3 +83,48 @@ The following screenshots show the testing of the Supreme Court Check mapping to
    - [Prigg V Pennsylvania Override Only](IMG/ButtonPriggVPennsylvaniaOverride.PNG)
    - [Shelby V Holder All Toggled](IMG/ButtonShelbyVHolderAll.PNG)
    - [Shelby V Holder Override Only](IMG/ButtonShelbyVHolderOverride.PNG)
+
+# QA Session: Issues and Fixes Sprint 5
+
+During the QA review, several issues were identified while testing the Collaborative Veto and Wyoming Veto Scenario mappings. Below is a summary of the findings and planned fixes.
+
+- [Collaborative Veto Map Energy Regulation - Only Allow](IMG/collaborativeVetoMapOnlyAllow.PNG)
+- [Collaborative Veto Map Energy Regulation - All Toggled](IMG/CollaborativeVetoMapEnergyRegulationAllToggled.PNG)  
+- [Collaborative Veto Map Firearm Restriction - Only Allow](IMG/CollaborativeVetoMapFirearmRestrictionOnlyAllow.PNG)
+- [Collaborative Veto Map Firearm Restriction - All Toggled](IMG/CollaborativeVetoMapFirearmRestrictionAllToggled.PNG)
+- [Collaborative Veto Map Zoning Control - Only Allow](IMG/CollaborativeVetoMapZoningControlOnlyAllow.PNG)
+- [Collaborative Veto Map Zoning Control - All Toggled](IMG/CollaborativeVetoMapZoningControlAllToggled.PNG)   
+
+
+## 1. Collaborative Veto Mapping  Toggle Behavior
+
+**Issue:**  
+The following screenshots show the testing of the Collaborative Veto mapping. All toggles were verified to be functioning correctly; however, one issue was identified in the Wyoming mapping system. When deselecting either the **Allow** or **Veto** option, the map removes a county and leaves a blank space. When both options are deselected, the map becomes blank except for the legend and title.
+
+- [Collaborative Veto Map Only Allow](IMG/collaborativeVetoMapOnlyAllow.PNG)  
+- [Collaborative Veto Map No Options Selected](IMG/collaborativeVetoMapNoOptionsSelected.PNG)
+
+**Fix:**  
+The team will investigate this behavior in the next sprint and implement a proper fix. Since the options still display the correct information, the current version will be committed for now.
+
+
+
+## 2. Wyoming Firearm Restriction Veto Scenario Legend Order
+
+**Issue:**  
+During testing, the legend options for the **Wyoming Firearm Restriction Veto** scenario were found to be flipped. This does not affect functionality but is noticeable when comparing maps for consistency.
+
+**Fix:**  
+This visual inconsistency will be addressed in a future sprint.
+
+
+
+## 3. Text Consistency “Above” vs. “Following”
+
+**Issue:**  
+The first sentence below the map used the phrase **“the following simulations model”**, which did not match the layout of the page.
+
+**Fix:**  
+The text will be updated to read **“The above simulations model…”** to maintain consistency with the map’s placement.
+
+
