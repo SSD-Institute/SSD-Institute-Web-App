@@ -2,7 +2,7 @@
 
 ## Project Overview
 The SSD Institute Web App is a Flask-based single-page application that implements multiple voting system visualizations and comparative analysis tools for education-related electoral cases.
-
+ 
 ---
 
 ## 📁 Root Level
