@@ -96,7 +96,7 @@ During the QA review, several issues were identified while testing the Collabora
 - [Collaborative Veto Map Zoning Control - All Toggled](IMG/CollaborativeVetoMapZoningControlAllToggled.PNG)   
 
 
-## 1. Collaborative Veto Mapping  Toggle Behavior
+## 1. Collaborative Veto Mapping Toggle Behavior
 
 **Issue:**  
 The following screenshots show the testing of the Collaborative Veto mapping. All toggles were verified to be functioning correctly; however, one issue was identified in the Wyoming mapping system. When deselecting either the **Allow** or **Veto** option, the map removes a county and leaves a blank space. When both options are deselected, the map becomes blank except for the legend and title.
@@ -128,3 +128,15 @@ The first sentence below the map used the phrase **“the following simulations 
 The text will be updated to read **“The above simulations model…”** to maintain consistency with the map’s placement.
 
 
+# QA Session: Issues and Fixes Sprint 6
+
+## 1. Collaborative Veto Mapping Toggle Behavior Update
+
+We couldn't find a way to quickly and easily fix the issue mentioned in the last sprint, but for now, we disabled the ability to click the legend to hide/show locations on the map.
+
+## 2. SSL Testing
+
+Using a publicly available SSL test website, we made sure that the website was properly implementing HTTPS.
+Here are the results.
+
+![SSL Test Results](IMG/SSD-Institute-SSL-Test-Results.png)

@@ -11,7 +11,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # Build absolute path to static visualization directory
 OUTPUT_DIR = os.path.join(
     PROJECT_ROOT,
-    "..", # Traverse out of the `visualization_scripts`` subdirectory
+    "..", # Traverse out of the `visualization_scripts` subdirectory
     "static",
     "visualizations",
     "cv"
@@ -91,11 +91,15 @@ for title, scenario in CollabVetoData.collaborative_veto_scenarios.items():
     # Clean legend title
     fig.update_layout(
         title=title,
-        legend_title_text="Decision"
+        legend_title_text="Decision",
+        legend=dict(
+            itemclick=False,       # disables single-click toggle
+            itemdoubleclick=False  # disables isolate-on-double-click
+        )
     )
 
     filename = title.lower().replace(" ", "-") + ".html"
 
     output_path = os.path.join(OUTPUT_DIR, filename)
 
-    fig.write_html(output_path)
+    fig.write_html(file=output_path)
