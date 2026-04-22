@@ -118,7 +118,80 @@ Branching Strategy:
 * **Test Credentials**  
   Currently, we do not have test credentials available for site access. This item is planned for a future sprint.
 
- 
+
+### Sprint 5
+* **New Features**
+
+  * **Collaborative Veto (County-Level Visualization)**
+    - Implemented a county-level choropleth map using Wyoming as a case study.
+    - **What the User Sees**:
+      - A state map displaying counties color-coded based on support (approve/veto) outcomes.
+      - Multiple scenarios representing different policy simulations.
+    - **Geospatial Data Integration**:
+      - Integrated U.S. Census-derived county GeoJSON data (filtered to Wyoming).
+      - Mapped FIPS codes to simulated voting outcomes.
+    - **Scenario-Based Data Modeling**:
+      - Created datasets modeling county-level responses to controversial state policies.
+      - Applied simple majority rule (51% of counties) to determine veto outcomes.
+    - **Known Issues (Documented)**:
+      - State boundary rendering issue when toggling specific approval/veto views.
+      - Minor UI wording inconsistency in explanation text.
+
+  * **Testing & QA Enhancements**
+    - Added dedicated test cases for county-level visualization rendering.
+    - Documented QA findings with supporting screenshots in `/docs/QA/`.
+    - Verified correct mapping between dataset values and visual output.
+
+  * **Accessibility Improvements**
+    - Introduced accessibility-focused UI enhancements:
+      - High-contrast compatibility
+      - Improved readability considerations
+    - Established groundwork for future accessibility expansion.
+
+  * **Repository & Workflow Updates**
+    - Cleaned and merged GeoJSON datasets with simulation data.
+    - Maintained traceability between issues, PRs, and visualization outputs.
+    - Continued enforcement of PR review and QA validation prior to merge.
+
+* **Test Credentials**  
+  Currently, we do not have test credentials available for site access. This item is planned for a future sprint.
+
+### Sprint 6
+* **New Features**
+
+  * **Production Deployment & Infrastructure**
+    - Successfully deployed the full application to PythonAnywhere production environment.
+    - Configured domain routing and ensured application availability via **HTTPS/SSL**.
+    - Completed SSL certificate setup for secure communication.
+
+  * **CI/CD & Deployment Pipeline**
+    - Finalized CI/CD pipeline for automated deployment from GitHub to production.
+    - Ensured consistency between local development, staging, and production environments.
+
+  * **Final QA & Validation**
+    - Conducted full-system QA testing before and after deployment.
+    - Validated:
+      - Visualization rendering across all modules (MCV, SCV, Collaborative Veto)
+      - Navigation and routing integrity
+      - External API functionality (GitHub “last updated” feature)
+    - Performed HTTPS/SSL validation testing to confirm secure site behavior.
+
+  * **Bug Fixes & Stability Improvements**
+    - Resolved Collaborative Veto visualization mapping issue identified in Sprint 5.
+    - Addressed UI inconsistencies and minor rendering issues.
+    - Improved overall system stability for production use.
+
+  * **Documentation & Final Deliverables**
+    - Created final system architecture documentation.
+    - Developed initial user manual draft for system handoff.
+    - Updated README with complete sprint history and feature documentation.
+
+  * **Testing & Evidence**
+    - Added final QA validation artifacts and documentation.
+    - Ensured all completed issues include traceable evidence of testing and resolution.
+
+* **Test Credentials**  
+  No authentication is required to access the application at this stage.
 
 ## Sprints
  * [Sprint 1](docs/sprints/SprintOne/SprintLogOne.md)
