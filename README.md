@@ -199,7 +199,7 @@ Branching Strategy:
  * [Sprint 3](docs/sprints/SprintThree/SprintLog3.md)
  * [Sprint 4](docs/sprints/SprintFour/SprintLog4.md)
  * [Sprint 5](docs/sprints/SprintFive/SprintLog5.md)
- * [Sprint 6](docs/sprints/SprintSix/)
+ * [Sprint 6](docs/sprints/SprintSix/SprintLog6.md)
  * [Sprint 7](docs/sprints/SprintSeven/)
  * [Sprint 8](docs/sprints/SprintEight/)
  
