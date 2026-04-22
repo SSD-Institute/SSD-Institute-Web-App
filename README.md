@@ -88,6 +88,38 @@ Branching Strategy:
          + Step 3: Viewing: Once the data is placed in the processed data directory (/static/visualizations/mcv/), the Flask application automatically detects the new file and makes it viewable on the live site.
  * **Test Credentials** - Currently, we do not have test credentials available for site access. This item is planned for a future sprint.
 
+### Sprint 4
+* **New Features**
+
+  * **Supreme Court Check (Visualization System)**
+    - Implemented a full-stack interactive choropleth map to model how states might respond to federal rulings under the *Supreme Court Veto* concept.
+    - **What the User Sees**:
+      - A dynamic U.S. map with state-level classifications (Support, Override, Mixed).
+      - Toggle controls for switching between historical and simulated case studies (e.g., *Brown v. Board*, *Dobbs*, *Shelby County*).
+    - **Geospatial Data Integration**:
+      - Added a standardized GeoJSON mapping layer aligning state boundaries with judicial and legislative sentiment datasets.
+    - **Interactive UI Components**:
+      - Built a JavaScript-driven “switcher bar” using Jinja2 templates to swap between case visualizations without reloading the page.
+
+  * **Automated QA & CI/CD**
+    - Added automated tests for visualization logic within the GitHub Actions workflow.
+    - Implemented a pytest suite to validate GeoJSON loading and correct color-scale rendering for choropleth maps.
+    - Updated the deployment pipeline to automatically regenerate and move processed visualization files into the production `static/` directory after a successful merge.
+
+  * **Documentation & Metadata**
+    - Added standardized “Last Updated” timestamps across all concept pages.
+    - Expanded technical documentation with workflows for adding new Supreme Court cases to the visualization pipeline.
+    - Documented judicial and legislative data sources used in simulation modeling (Oyez, Cornell Law, historical state legislative records).
+
+  * **Repository & Workflow Enhancements**
+    - Updated the pull-request workflow to require at least one reviewer approval for visualization-related scripts.
+    - Resolved a navigation bug where header highlights did not correctly reflect the active concept page.
+
+* **Test Credentials**  
+  Currently, we do not have test credentials available for site access. This item is planned for a future sprint.
+
+ 
+
 ## Sprints
  * [Sprint 1](docs/sprints/SprintOne/SprintLogOne.md)
  * [Sprint 2](docs/sprints/SprintTwo/SprintLogTwo.md)

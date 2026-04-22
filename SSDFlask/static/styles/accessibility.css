@@ -1,0 +1,122 @@
+/* --- 1. Variables & Themes --- */
+:root {
+    --ax-purple: #813D9C;
+    --ax-bg: #ffffff;
+    --ax-text: #333333;
+    --ax-panel-bg: #ffffff;
+    --ax-border: 1px solid #ccc;
+}
+
+body.dark-mode {
+    --ax-bg: #1a1a1a;
+    --ax-panel-bg: #2c2c2c;
+    --ax-text: #e0e0e0;
+    --ax-heading: #ffffff;
+    --ax-btn-bg: #3d3d3d;
+}
+
+body.high-contrast {
+    --ax-bg: #000000;
+    --ax-panel-bg: #000000;
+    --ax-text: #ffff00;
+    --ax-heading: #ffff00;
+    --ax-btn-bg: #000000;
+    --ax-border: 2px solid #ffff00;
+}
+
+/* --- 2. Floating Action Button & Sidebar Container --- */
+.ax-fab-trigger {
+    position: fixed !important; bottom: 25px !important; right: 25px !important;
+    width: 60px !important; height: 60px !important; border-radius: 50% !important;
+    background-color: var(--ax-purple) !important; color: white !important;
+    border: none !important; cursor: pointer !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+    z-index: 9999 !important; display: flex !important;
+    align-items: center !important; justify-content: center !important;
+}
+
+.ax-sidebar-panel {
+    position: fixed !important; top: 0 !important; right: -320px !important;
+    width: 300px !important; height: 100% !important;
+    background-color: var(--ax-panel-bg) !important;
+    color: var(--ax-text) !important;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.2) !important;
+    transition: right 0.3s ease-in-out !important;
+    z-index: 10000 !important; padding: 25px !important;
+    box-sizing: border-box !important;
+    border-left: var(--ax-border) !important;
+}
+.ax-sidebar-panel.ax-active { right: 0 !important; }
+
+/* --- 3. Sidebar Internal Layout (Moved from HTML) --- */
+.ax-sidebar-header {
+    display: flex !important; justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.ax-sidebar-header h3 { margin: 0 !important; }
+
+.ax-close-btn {
+    background: none !important; border: none !important;
+    font-size: 32px !important; line-height: 1 !important;
+    cursor: pointer !important; color: var(--ax-text) !important;
+    padding: 0 !important;
+}
+
+.ax-section { margin-top: 20px !important; }
+
+.ax-sidebar-content hr {
+    margin: 20px 0 !important; border: 0 !important;
+    border-top: var(--ax-border) !important;
+}
+
+#font-slider { width: 100% !important; }
+
+/* --- 4. Global Theme Overrides --- */
+body.dark-mode, body.dark-mode main, body.dark-mode article,
+body.high-contrast, body.high-contrast main, body.high-contrast article {
+    background-color: var(--ax-bg) !important;
+    color: var(--ax-text) !important;
+}
+
+/* Grouping text elements for cleaner color application */
+body.dark-mode :is(h1, h2, h3, p, li, span, strong, .ax-close-btn),
+body.high-contrast :is(h1, h2, h3, p, li, span, strong, b, .ax-close-btn, .definition-label) {
+    color: var(--ax-heading, var(--ax-text)) !important;
+}
+
+/* Icon Visibility (Filters) */
+body.dark-mode :is(.menu_button_image, .footer_social_icon_link img, .footer_email_link img) {
+    filter: invert(1) brightness(2) !important;
+}
+
+body.high-contrast :is(.menu_button_image, .footer_social_icon_link img, .footer_email_link img) {
+    filter: invert(80%) sepia(100%) saturate(500%) hue-rotate(10deg) !important;
+}
+
+/* --- 5. Navigation & Buttons --- */
+.header_tab_link { color: var(--ax-text) !important; }
+body.high-contrast .header_tab_link { border: var(--ax-border) !important; }
+
+.ax-option-btn {
+    width: 100% !important; padding: 10px !important; margin: 5px 0 !important;
+    border-radius: 8px !important; border: var(--ax-border) !important;
+    background: var(--ax-btn-bg, #f8f9fa) !important;
+    color: var(--ax-text) !important; font-weight: bold !important; cursor: pointer !important;
+}
+
+.ax-option-btn[aria-pressed="true"] {
+    background: var(--ax-purple) !important; color: white !important; border: none !important;
+}
+
+.ax-reset-btn {
+    width: 100% !important; padding: 12px !important; border-radius: 8px !important;
+    background: #dc3545 !important; color: white !important;
+    border: none !important; cursor: pointer !important; margin-top: 10px !important;
+}
+
+/* --- 6. Font Scaling Overrides --- */
+body[style*="font-size"] h1 { font-size: 2.5em !important; }
+body[style*="font-size"] :is(p, li, strong) { font-size: 1.1em !important; }
+
+
